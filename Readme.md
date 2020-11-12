@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Клара Асланова](https://up.htmlacademy.ru/adaptive/21/user/111171).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Баронин](https://up.htmlacademy.ru/adaptive/21/user/155830).
 
 ---
 
