@@ -1,0 +1,15 @@
+.promo-block {
+  background: url("img/promo-block-bg.jpg") no-repeat center;
+}
+
+.promo-block__title {
+  font-size: 36px;
+  line-height: 1;
+  color: $white;
+}
+
+.promo-block__caption {
+  line-height: 1;
+  color: $white;
+  text-transform: uppercase;
+}
