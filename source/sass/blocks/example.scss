@@ -1,0 +1,13 @@
+.example {
+  background-color: #eaeaea;
+
+  &__title {
+    color: $black;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  &__description {
+    font-family: "Arial", sans-serif;
+  }
+}
