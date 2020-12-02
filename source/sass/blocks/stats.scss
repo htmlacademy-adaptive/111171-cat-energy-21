@@ -6,17 +6,17 @@
   }
 
   &__name {
-    font-family: "Arial", sans-serif;
+    font-family: $Arial;
     font-size: 12px;
     line-height: 1;
   }
+}
 
-  &--cost {
-    .stats__name,
-    .stats__figure {
-      color: $black;
-      line-height: 20px;
-      text-transform: uppercase;
-    }
+.stats--cost {
+  .stats__name,
+  .stats__figure {
+    color: $black;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 }
