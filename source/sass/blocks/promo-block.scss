@@ -1,10 +1,11 @@
 .promo-block {
-  background: url("img/promo-block-bg.jpg") no-repeat center;
+  background: $green url("img/promo-block-bg.jpg") no-repeat center;
 
   &__title {
     font-size: 36px;
     line-height: 1;
     color: $white;
+    font-weight: 400;
   }
 
   &__caption {
