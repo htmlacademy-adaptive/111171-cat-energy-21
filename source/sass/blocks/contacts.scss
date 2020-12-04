@@ -1,6 +1,4 @@
 .contacts {
-  background-color: $white;
-
   &__caption {
     color: #111111;
     font-size: 16px;
@@ -11,4 +9,8 @@
     font-family: $Arial;
     line-height: 20px;
   }
+}
+
+.contact--index {
+  background-color: $white;
 }

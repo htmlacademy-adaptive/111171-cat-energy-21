@@ -1,0 +1,13 @@
+.page-main {
+  &__title {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: $black;
+  }
+
+  &__caption {
+    color: $black;
+    text-transform: uppercase;
+  }
+}
