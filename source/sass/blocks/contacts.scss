@@ -1,0 +1,14 @@
+.contacts {
+  background-color: $white;
+
+  &__caption {
+    color: #111111;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__address {
+    font-family: $Arial;
+    line-height: 20px;
+  }
+}
