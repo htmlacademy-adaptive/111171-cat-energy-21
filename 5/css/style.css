@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+.page {
+  font-family: "Oswald", arial sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px; }
+
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .site-list__item {
+    color: #000000;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .site-list__item a {
+      text-decoration: none;
+      color: #000000; }
+
+.promo-block {
+  background: #5eaa2f url("img/promo-block-bg.jpg") no-repeat center; }
+  .promo-block__title {
+    font-size: 36px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 400; }
+  .promo-block__caption {
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .promo-block__button {
+    text-decoration: none; }
+
+.button {
+  min-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738; }
+
+.advantages__title {
+  color: #000000;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400; }
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.advantage__icon-wrapper {
+  background-color: #68b738; }
+
+.advantage__description {
+  font-family: "Arial", sans-serif; }
+
+.stats__figure {
+  color: #000000;
+  font-size: 24px;
+  line-height: 1; }
+
+.stats__name {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1; }
+
+.stats--cost .stats__name,
+.stats--cost .stats__figure {
+  color: #000000;
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.program {
+  background-color: #f2f2f2; }
+  .program__title {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400; }
+  .program__description {
+    font-family: "Arial", sans-serif; }
+  .program__link {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none; }
+
+.example {
+  background-color: #eaeaea; }
+  .example__title {
+    color: #000000;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400; }
+  .example__description {
+    font-family: "Arial", sans-serif; }
+
+.slider-toggle {
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px; }
+
+.contacts {
+  background-color: #ffffff; }
+  .contacts__caption {
+    color: #111111;
+    font-size: 16px;
+    text-transform: uppercase; }
+  .contacts__address {
+    font-family: "Arial", sans-serif;
+    line-height: 20px; }
+
+.page-footer {
+  background-color: #f2f2f2; }
+
+.copyright__academy-text {
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #444444; }
+
+/*# sourceMappingURL=style.css.map */
