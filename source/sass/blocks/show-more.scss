@@ -1,0 +1,14 @@
+.show-more {
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark;
+    text-transform: uppercase;
+  }
+
+  &__caption {
+    font-family: $Arial;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

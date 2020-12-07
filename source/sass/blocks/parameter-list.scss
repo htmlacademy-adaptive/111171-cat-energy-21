@@ -1,0 +1,16 @@
+.parameter-list {
+  &__name,
+  &__value {
+    font-family: $Arial;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.parameter-list--extra {
+  &__name,
+  &__value {
+    font-size: 14px;
+    line-height: 1;
+  }
+}

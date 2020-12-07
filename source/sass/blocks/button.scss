@@ -4,3 +4,15 @@
   text-transform: uppercase;
   background-color: $light-green;
 }
+
+.button--order {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--show-more {
+  background-color: $lightest-grey;
+  min-height: 60px;
+  font-size: 16px;
+  line-height: 20px;
+}
