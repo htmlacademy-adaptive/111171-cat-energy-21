@@ -1,6 +1,10 @@
 .advantage {
+  display: flex;
+
   &__icon-wrapper {
     background-color: $light-green;
+    width: 60px;
+    height: 60px;
   }
 
   &__description {

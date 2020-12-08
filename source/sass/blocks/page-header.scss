@@ -1,0 +1,12 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+  }
+}

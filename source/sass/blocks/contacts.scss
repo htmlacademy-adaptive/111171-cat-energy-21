@@ -1,16 +1,25 @@
 .contacts {
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+  }
+
   &__caption {
     color: #111111;
     font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase;
+    width: 50%;
   }
 
   &__address {
     font-family: $Arial;
     line-height: 20px;
+    width: 50%;
   }
 }
 
-.contact--index {
+.contacts--index {
   background-color: $white;
 }

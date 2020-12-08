@@ -1,4 +1,9 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
   &__academy-text {
     text-decoration: none;
     font-family: $Arial;

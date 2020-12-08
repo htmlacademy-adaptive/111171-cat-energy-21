@@ -8,5 +8,7 @@
 
   &__list {
     @include list-styles-reset;
+    width: 280px;
+    margin: 0 auto;
   }
 }
