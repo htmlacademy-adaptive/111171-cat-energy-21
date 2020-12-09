@@ -6,18 +6,18 @@
 
 @mixin mobile {
   @media (min-width: $mobile-width-only) {
-      @content;
+    @content;
   }
 }
 
 @mixin tablet {
   @media (min-width: $tablet-width) {
-      @content;
+    @content;
   }
 }
 
 @mixin desktop {
   @media (min-width: $desktop-width) {
-      @content;
+    @content;
   }
 }
