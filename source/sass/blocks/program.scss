@@ -1,7 +1,9 @@
 .program {
   background-color: $lightest-grey;
-  width: 280px;
-  margin: 0 auto;
+
+  @include desktop {
+    flex-basis: 47.35%;
+  }
 
   &__title {
     color: $black;
