@@ -1,6 +1,10 @@
 .program {
   background-color: $lightest-grey;
 
+  @include desktop {
+    flex-basis: 47.35%;
+  }
+
   &__title {
     color: $black;
     text-transform: uppercase;

@@ -1,6 +1,31 @@
 .example {
   background-color: #eaeaea;
 
+  @include tablet {
+    background-color: $white;
+  }
+
+  &__wrapper {
+    padding: 0 20px;
+
+    @include tablet {
+      padding: 0 30px;
+    }
+
+    @include desktop {
+      padding: 0 110px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__wrapper--left {
+    @include desktop {
+      flex-basis: 36.22%;
+      display: block;
+    }
+  }
+
   &__title {
     color: $black;
     font-size: 36px;
@@ -10,5 +35,11 @@
 
   &__description {
     font-family: $Arial;
+  }
+
+  &__photo {
+    @include desktop {
+      flex-basis: 57.31%;
+    }
   }
 }

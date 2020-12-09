@@ -1,0 +1,6 @@
+.social {
+  @include list-styles-reset;
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+}

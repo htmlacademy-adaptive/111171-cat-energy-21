@@ -2,19 +2,25 @@
 @import "common/variables.scss";
 @import "common/mixin.scss";
 
+//global
+@import "global/global.scss";
+
 //blocks
 @import "blocks/page.scss";
+@import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/promo-block.scss";
 @import "blocks/button.scss";
 @import "blocks/advantages.scss";
 @import "blocks/advantage.scss";
 @import "blocks/stats.scss";
+@import "blocks/programs.scss";
 @import "blocks/program.scss";
 @import "blocks/example.scss";
 @import "blocks/slider-toggle.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/page-main.scss";
 @import "blocks/program-form.scss";

@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page page--background">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="logo-icon" src="https://via.placeholder.com/33x38" width="33" height="38" alt="логотип CatEnergy">
-        <img class="logo-text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="CatEnergy">
+        <img class="logo-icon" src="img/logo-mobile.svg" width="33" height="38" alt="логотип CatEnergy">
+        <img class="logo-text" src="img/text-logo.svg" width="101" height="18" alt="CatEnergy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -95,21 +96,25 @@
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="example__stats stats">
-            <span class="stats__figure">5 кг</span>
-            <span class="stats__name">снижение веса</span>
-          </div>
-          <div class="example__stats stats">
-            <span class="stats__figure">60 дней</span>
-            <span class="stats__name">затрачено времени</span>
-          </div>
-          <div class="example__stats stats stats--cost">
-            <span class="stats__name">Затраты на питание:</span>
-            <span class="stats__figure">15 000 руб.</span>
+          <div class="example__wrapper example__wrapper--left">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div class="example__stats stats">
+              <p class="stats__item">
+                <span class="stats__figure">5 кг</span>
+                <span class="stats__name">снижение веса</span>
+              </p>
+              <p class="stats__item">
+                <span class="stats__figure">60 дней</span>
+                <span class="stats__name">затрачено времени</span>
+              </p>
+              <p class="stats__item stats__item--cost">
+                <span class="stats__name">Затраты на питание:</span>
+                <span class="stats__figure">15 000 руб.</span>
+              </p>
+            </div>
           </div>
           <div class="example__photo photo-slider">
             <div class="photo-slider__img">

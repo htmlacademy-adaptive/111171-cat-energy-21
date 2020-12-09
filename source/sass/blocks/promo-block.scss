@@ -1,20 +1,43 @@
 .promo-block {
-  background: $green url("img/promo-block-bg.jpg") no-repeat center;
+  background: $green url("/img/promo-block-bg.jpg") no-repeat center;
+
+  @include tablet {
+    background: none;
+  }
+
+  &__wrapper {
+    padding: 27px 20px 22px;
+
+    @include tablet {
+      padding-top: 62px;
+      padding-left: 117px;
+    }
+
+    @include desktop {
+      padding-top: 111px;
+      padding-left: 190px;
+    }
+  }
 
   &__title {
     font-size: 36px;
     line-height: 1;
     color: $white;
     font-weight: 400;
+    margin: 0;
+
+    @include tablet {
+      color: $black;
+    }
   }
 
   &__caption {
     line-height: 1;
     color: $white;
     text-transform: uppercase;
-  }
 
-  &__button {
-    text-decoration: none;
+    @include tablet {
+      color: $black;
+    }
   }
 }

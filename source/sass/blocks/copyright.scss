@@ -1,4 +1,13 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @include tablet {
+    flex-basis: 163px;
+  }
+
   &__academy-text {
     text-decoration: none;
     font-family: $Arial;

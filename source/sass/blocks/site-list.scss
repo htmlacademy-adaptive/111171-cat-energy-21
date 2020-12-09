@@ -1,6 +1,10 @@
 .site-list {
   @include list-styles-reset;
 
+  @include tablet {
+    display: flex;
+  }
+
   &__item {
     color: $black;
     font-size: 20px;
@@ -8,10 +12,17 @@
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
+    border-top: 1px solid #e6e6e6;
+    box-sizing: border-box;
 
     a {
       text-decoration: none;
       color: $black;
+      min-height: 66px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

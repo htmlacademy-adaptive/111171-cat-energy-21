@@ -1,0 +1,13 @@
+.programs {
+  padding: 0 20px;
+
+  @include tablet {
+    padding: 0 30px;
+  }
+
+  @include desktop {
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

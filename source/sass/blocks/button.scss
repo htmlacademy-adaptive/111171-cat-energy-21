@@ -4,6 +4,13 @@
   text-transform: uppercase;
   background-color: $light-green;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    width: 244px;
+  }
 }
 
 .button--order {
