@@ -1,4 +1,12 @@
 .checkbox {
+  padding-left: 66px;
+  box-sizing: border-box;
+
+  @include tablet {
+    flex-basis: 50%;
+    padding-left: 59px;
+  }
+
   &__name {
     color: $black;
     font-size: 16px;

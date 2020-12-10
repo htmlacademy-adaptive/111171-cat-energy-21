@@ -1,4 +1,6 @@
 .field {
+  display: flex;
+
   &__name {
     font-size: 16px;
     text-transform: uppercase;
@@ -14,5 +16,18 @@
 
   &__value {
     border: 1px solid #e7e7e7;
+    flex-grow: 1;
+  }
+}
+
+.field--contacts {
+  @include desktop {
+    flex-grow: 1;
+  }
+
+  &:first-child {
+    @include desktop {
+      margin-right: 78px;
+    }
   }
 }

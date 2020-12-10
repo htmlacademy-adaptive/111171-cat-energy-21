@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="logo-icon" src="https://via.placeholder.com/33x38" width="33" height="38" alt="логотип CatEnergy">
-        <img class="logo-text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="CatEnergy">
+        <img class="logo-icon" src="img/logo-mobile.svg" width="33" height="38" alt="логотип CatEnergy">
+        <img class="logo-text" src="img/text-logo.svg" width="101" height="18" alt="CatEnergy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -35,44 +36,52 @@
       </p>
       <section class="program-form">
         <form class="program-form__list">
-          <fieldset class="program-form__fieldset fieldset">
-            <p class="fieldset__item field">
-              <label class="field__name" for="name">Имя:*</label>
-              <input class="field__value" type="text" placeholder="Барсик" id="name" required>
-            </p>
-            <p class="fieldset__item field">
-              <label class="field__name" for="weight">Вес (кг):*</label>
-              <input class="field__value" type="text" placeholder="7" id="weight" required>
-            </p>
-            <p class="fieldset__item field">
-              <label class="field__name" for="age">Возраст (лет):</label>
-              <input class="field__value" type="text" placeholder="7" id="age">
-            </p>
-          </fieldset>
-          <fieldset class="program-form__fieldset fieldset">
-            <p class="fieldset__item radio">
-              <label class="radio__name" for="goal-diet">Похудение</label>
-              <input class="visually-hidden" type="radio" name="goal" value="diet" id="goal-diet" checked>
-            </p>
-            <p class="fieldset__item radio">
-              <label class="radio__name" for="goal-mass">Набор массы</label>
-              <input class="visually-hidden" type="radio" name="goal" value="mass" id="goal-mass">
-            </p>
-            <p class="fieldset__item radio">
-              <label class="radio__name" for="goal-advice">Не знаю (нужен ваш совет)</label>
-              <input class="visually-hidden" type="radio" name="goal" value="advice" id="goal-advice">
-            </p>
-          </fieldset>
+          <div class="program-form__container">
+            <div class="program-form__wrapper">
+              <fieldset class="program-form__fieldset fieldset">
+                <p class="fieldset__item field">
+                  <label class="field__name" for="name">Имя:*</label>
+                  <input class="field__value" type="text" placeholder="Барсик" id="name" required>
+                </p>
+                <p class="fieldset__item field">
+                  <label class="field__name" for="weight">Вес (кг):*</label>
+                  <input class="field__value" type="text" placeholder="7" id="weight" required>
+                </p>
+                <p class="fieldset__item field">
+                  <label class="field__name" for="age">Возраст (лет):</label>
+                  <input class="field__value" type="text" placeholder="7" id="age">
+                </p>
+              </fieldset>
+            </div>
+            <div class="program-form__wrapper">
+              <fieldset class="program-form__fieldset fieldset">
+                <p class="fieldset__item radio">
+                  <label class="radio__name" for="goal-diet">Похудение</label>
+                  <input class="visually-hidden" type="radio" name="goal" value="diet" id="goal-diet" checked>
+                </p>
+                <p class="fieldset__item radio">
+                  <label class="radio__name" for="goal-mass">Набор массы</label>
+                  <input class="visually-hidden" type="radio" name="goal" value="mass" id="goal-mass">
+                </p>
+                <p class="fieldset__item radio">
+                  <label class="radio__name" for="goal-advice">Не знаю (нужен ваш совет)</label>
+                  <input class="visually-hidden" type="radio" name="goal" value="advice" id="goal-advice">
+                </p>
+              </fieldset>
+            </div>
+          </div>
           <fieldset class="program-form__fieldset fieldset">
             <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
-            <p class="fieldset__item field">
-              <label class="field__name" for="mail">e-mail:*</label>
-              <input class="field__value field__value--mail" type="text" placeholder="kuklachev@gmail.com" id="mail" required>
-            </p>
-            <p class="fieldset__item field">
-              <label class="field__name" for="phone">Телефон:*</label>
-              <input class="field__value field__value--phone" type="text" placeholder="8(960)900-60-90" id="phone" required>
-            </p>
+            <div class="fieldset__flex">
+              <p class="fieldset__item field field--contacts">
+                <label class="field__name" for="mail">e-mail:*</label>
+                <input class="field__value field__value--mail" type="text" placeholder="kuklachev@gmail.com" id="mail" required>
+              </p>
+              <p class="fieldset__item field field--contacts">
+                <label class="field__name" for="phone">Телефон:*</label>
+                <input class="field__value field__value--phone" type="text" placeholder="8(960)900-60-90" id="phone" required>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="program-form__fieldset fieldset">
             <legend class="fieldset__title">Комментарий</legend>
@@ -82,25 +91,29 @@
           </fieldset>
           <fieldset class="program-form__fieldset fieldset">
             <legend class="fieldset__title">Дополнительно</legend>
-            <p class="fieldset__item checkbox">
-              <label class="checkbox__name" for="additional-sweetener">Сахарозаменитель</label>
-              <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" id="additional-sweetener" checked>
-            </p>
-            <p class="fieldset__item checkbox">
-              <label class="checkbox__name" for="additional-water">Питьевая вода</label>
-              <input class="visually-hidden" type="checkbox" name="additional" value="water" id="additional-water">
-            </p>
-            <p class="fieldset__item checkbox">
-              <label class="checkbox__name" for="additional-milk">Молоко</label>
-              <input class="visually-hidden" type="checkbox" name="additional" value="milk" id="additional-milk">
-            </p>
-            <p class="fieldset__item checkbox">
-              <label class="checkbox__name" for="additional-vitamins">Витамины</label>
-              <input class="visually-hidden" type="checkbox" name="additional" value="vitamins" id="additional-vitamins">
-            </p>
+            <div class="fieldset__wrapper">
+              <p class="fieldset__item checkbox">
+                <label class="checkbox__name" for="additional-sweetener">Сахарозаменитель</label>
+                <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" id="additional-sweetener" checked>
+              </p>
+              <p class="fieldset__item checkbox">
+                <label class="checkbox__name" for="additional-water">Питьевая вода</label>
+                <input class="visually-hidden" type="checkbox" name="additional" value="water" id="additional-water">
+              </p>
+              <p class="fieldset__item checkbox">
+                <label class="checkbox__name" for="additional-milk">Молоко</label>
+                <input class="visually-hidden" type="checkbox" name="additional" value="milk" id="additional-milk">
+              </p>
+              <p class="fieldset__item checkbox">
+                <label class="checkbox__name" for="additional-vitamins">Витамины</label>
+                <input class="visually-hidden" type="checkbox" name="additional" value="vitamins" id="additional-vitamins">
+              </p>
+            </div>
           </fieldset>
-          <button class="program-form__submit button" type="submit">Отправить заявку</button>
-          <span class="program-form__caption">* - Обязательные поля</span>
+          <div class="program-form__flex">
+            <button class="program-form__submit button" type="submit">Отправить заявку</button>
+            <span class="program-form__caption">* - Обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
