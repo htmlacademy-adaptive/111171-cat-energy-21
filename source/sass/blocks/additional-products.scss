@@ -4,5 +4,32 @@
     line-height: 1;
     color: $black;
     font-weight: 400;
+
+    @include tablet {
+      padding-left: 37px;
+    }
+  }
+
+  &__wrapper {
+    padding: 0 20px;
+
+    @include tablet {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include desktop {
+      display: flex;
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
+  &__list {
+    @include list-styles-reset;
+
+    @include desktop {
+      flex-grow: 1;
+    }
   }
 }

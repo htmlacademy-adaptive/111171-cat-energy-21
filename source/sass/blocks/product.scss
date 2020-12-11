@@ -1,9 +1,30 @@
 .product {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__title {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
     color: $darkest-grey;
     text-transform: uppercase;
+  }
+
+  &__button {
+    grid-column: 1/3;
   }
 }
