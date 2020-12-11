@@ -1,7 +1,60 @@
 .program-form {
+  &__container {
+    @include desktop {
+      display: flex;
+      padding: 0 110px;
+    }
+  }
+
+  &__wrapper {
+    @include desktop {
+      flex-basis: 50%;
+    }
+
+    &:first-child {
+      @include desktop {
+        margin-right: 80px;
+      }
+    }
+  }
+
+  &__flex {
+    padding: 0 20px;
+
+    @include tablet {
+      padding-left: 70px;
+      padding-right: 70px;
+      display: flex;
+    }
+
+    @include desktop {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
   &__caption {
     color: $black;
     line-height: 16px;
     font-family: $Arial;
+
+    @include tablet {
+      flex-basis: 50%;
+    }
+  }
+
+  &__submit {
+    min-width: 100%;
+
+    @include tablet {
+      flex-basis: 50%;
+      min-width: auto;
+    }
+
+    @include desktop {
+      flex-basis: auto;
+      min-width: 568px;
+      margin-right: 81px;
+    }
   }
 }
