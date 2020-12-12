@@ -5,20 +5,6 @@
     background: none;
   }
 
-  &__wrapper {
-    padding: 27px 20px 22px;
-
-    @include tablet {
-      padding-top: 62px;
-      padding-left: 117px;
-    }
-
-    @include desktop {
-      padding-top: 111px;
-      padding-left: 190px;
-    }
-  }
-
   &__title {
     font-size: 36px;
     line-height: 1;

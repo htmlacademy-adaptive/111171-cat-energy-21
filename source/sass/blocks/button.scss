@@ -1,15 +1,19 @@
 .button {
   text-transform: uppercase;
   text-decoration: none;
-  display: block;
   box-sizing: border-box;
   text-align: center;
 }
 
 .button--promo-block {
   background-color: $light-green;
-  padding: 11px 0;
+  padding: 11px 73px;
   color: $white;
+
+  @include tablet {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
 
 .button--order {
