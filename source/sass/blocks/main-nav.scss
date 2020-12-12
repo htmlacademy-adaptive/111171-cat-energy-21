@@ -1,0 +1,29 @@
+.main-nav {
+  position: relative;
+  min-height: 66px;
+
+  &__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.main-nav--closed {
+
+  .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    height: 1.5px;
+    width: 24px;
+    background-color: $black;
+  }
+}
