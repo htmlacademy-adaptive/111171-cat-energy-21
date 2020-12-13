@@ -1,16 +1,5 @@
 .fieldset {
-  padding: 0 20px;
   border: none;
-
-  @include tablet {
-    padding-left: 71px;
-    padding-right: 67px;
-  }
-
-  @include desktop {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
 
   &__title {
     color: $black;
