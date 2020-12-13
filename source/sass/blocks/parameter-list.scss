@@ -1,9 +1,17 @@
 .parameter-list {
+  display: flex;
+  flex-wrap: wrap;
+
   &__name,
   &__value {
     font-family: $Arial;
     font-size: 12px;
     line-height: 16px;
+    flex-basis: 50%;
+  }
+
+  &__value {
+    margin-left: 0;
   }
 }
 
@@ -12,5 +20,9 @@
   &__value {
     font-size: 14px;
     line-height: 1;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
   }
 }

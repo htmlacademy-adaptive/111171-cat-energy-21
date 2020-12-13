@@ -1,15 +1,6 @@
 .contacts {
   &__wrapper {
-    padding: 0 20px;
     display: flex;
-
-    @include tablet {
-      padding: 0 30px;
-    }
-
-    @include desktop {
-      padding: 62px 76px 59px;
-    }
   }
 
   &__caption {

@@ -1,8 +1,22 @@
 .promo {
-  background: $light-green url("img/gift-photo-mobile.jpg") no-repeat center;
+  padding: 0 20px;
+
+  &__wrapper {
+    background: $light-green url("/img/gift-photo-mobile.jpg") no-repeat center;
+    padding: 186px 0 43px;
+
+    @include tablet {
+      padding: 71px 124px 69px 423px;
+    }
+
+    @include desktop {
+      padding: 185px 43px 42px 41px;
+    }
+  }
 
   &__description {
     font-family: $Arial;
+    color: $white;
     font-size: 16px;
     line-height: 20px;
     padding: 0;
