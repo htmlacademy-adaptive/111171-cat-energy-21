@@ -16,7 +16,6 @@
 }
 
 .main-nav--closed {
-
   .main-nav__toggle::before {
     content: "";
     position: absolute;
@@ -25,5 +24,8 @@
     height: 1.5px;
     width: 24px;
     background-color: $black;
+    box-shadow:
+      0 6px 0 0 $black,
+      0 12px 0 0 $black;
   }
 }
