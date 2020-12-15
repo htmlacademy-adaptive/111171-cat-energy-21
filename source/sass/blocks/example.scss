@@ -1,5 +1,6 @@
 .example {
   background-color: #eaeaea;
+  padding-top: 27px;
 
   @include tablet {
     background-color: $white;
@@ -24,10 +25,17 @@
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
+    margin: 0;
   }
 
   &__description {
     font-family: $Arial;
+    margin-top: 33px;
+    margin-right: 5px;
+  }
+
+  &__stats {
+    margin-top: 24px;
   }
 
   &__photo {

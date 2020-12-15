@@ -1,5 +1,6 @@
 .program {
   background-color: $lightest-grey;
+  padding: 30px 20px 20px;
 
   @include desktop {
     flex-basis: 47.35%;
@@ -11,10 +12,16 @@
     font-size: 24px;
     line-height: 37px;
     font-weight: 400;
+    margin: 0;
+    padding-left: 71px;
   }
 
   &__description {
     font-family: $Arial;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
   }
 
   &__link {
@@ -23,5 +30,28 @@
     line-height: 1;
     text-transform: uppercase;
     text-decoration: none;
+    display: inline-block;
+    padding-right: 47px;
+    background-image: url("/img/arrow.svg");
+    background-position: 100px center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url("/img/arrow-hover.svg");
+      background-position: 100px center;
+      background-repeat: no-repeat;
+    }
   }
+}
+
+.program--diet {
+  background-image: url("/img/cat_diet.svg");
+  background-position: 22px 21px;
+  background-repeat: no-repeat;
+}
+
+.program--mass {
+  background-image: url("/img/cat_mass.svg");
+  background-position: 13px 24px;
+  background-repeat: no-repeat;
 }

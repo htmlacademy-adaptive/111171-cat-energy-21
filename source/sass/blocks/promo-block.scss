@@ -1,5 +1,8 @@
 .promo-block {
   background: $green url("/img/promo-block-bg.jpg") no-repeat center;
+  padding-top: 28px;
+  padding-bottom: 164px;
+  position: relative;
 
   @include tablet {
     background: none;
@@ -11,6 +14,7 @@
     color: $white;
     font-weight: 400;
     margin: 0;
+    text-align: center;
 
     @include tablet {
       color: $black;
@@ -20,6 +24,10 @@
   &__caption {
     line-height: 1;
     color: $white;
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    box-sizing: border-box;
     text-transform: uppercase;
 
     @include tablet {
@@ -27,7 +35,13 @@
     }
   }
 
+  &__img-wrapper {
+    position: absolute;
+    top: 168px;
+  }
+
   &__button {
-    min-width: 244px;
+    position: absolute;
+    top: 441px;
   }
 }
