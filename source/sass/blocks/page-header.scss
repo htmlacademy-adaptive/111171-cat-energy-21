@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @include tablet {
     padding: 24px 29px 0 30px;

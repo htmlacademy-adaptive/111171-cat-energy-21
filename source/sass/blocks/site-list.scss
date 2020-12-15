@@ -17,12 +17,12 @@
 
     a {
       text-decoration: none;
+      padding-top: 22px;
+      padding-bottom: 24px;
+      text-align: center;
       color: $black;
-      min-height: 66px;
+      display: block;
       box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 }
