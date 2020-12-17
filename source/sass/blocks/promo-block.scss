@@ -6,6 +6,9 @@
 
   @include tablet {
     background: none;
+    padding-left: 117px;
+    padding-right: 230px;
+    padding-top: 50px;
   }
 
   &__title {
@@ -18,6 +21,8 @@
 
     @include tablet {
       color: $black;
+      font-size: 60px;
+      text-align: left;
     }
   }
 
@@ -32,16 +37,28 @@
 
     @include tablet {
       color: $black;
+      text-align: left;
+      font-size: 20px;
+      margin-top: 42px;
     }
   }
 
   &__img-wrapper {
     position: absolute;
     top: 168px;
+
+    @include tablet {
+      top: 251px;
+    }
   }
 
   &__button {
     position: absolute;
     top: 441px;
+
+    @include tablet {
+      top: 281px;
+      left: 112px;
+    }
   }
 }

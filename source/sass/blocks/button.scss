@@ -11,8 +11,9 @@
   color: $white;
 
   @include tablet {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 18px 26px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
