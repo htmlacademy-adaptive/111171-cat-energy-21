@@ -1,6 +1,7 @@
 .example {
   background-color: #eaeaea;
   padding-top: 27px;
+  padding-bottom: 33px;
 
   @include tablet {
     background-color: $white;
@@ -39,6 +40,8 @@
   }
 
   &__photo {
+    margin-top: 7px;
+
     @include desktop {
       flex-basis: 57.31%;
     }

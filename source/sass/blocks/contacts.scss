@@ -1,4 +1,6 @@
 .contacts {
+  padding-top: 29px;
+
   &__wrapper {
     display: flex;
   }
@@ -15,6 +17,11 @@
     font-family: $Arial;
     line-height: 20px;
     width: 50%;
+  }
+
+  &__map {
+    margin-top: 25px;
+    background-color: $lightest-grey;
   }
 }
 

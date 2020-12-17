@@ -1,6 +1,10 @@
 .main-nav {
   min-height: 66px;
 
+  @include tablet {
+    flex-grow: 1;
+  }
+
   &__toggle {
     position: absolute;
     top: 0;
@@ -11,6 +15,10 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 

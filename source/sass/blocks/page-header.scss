@@ -4,7 +4,7 @@
   position: relative;
 
   @include tablet {
-    padding: 24px 29px 0 30px;
+    padding: 23px 29px 0 30px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -23,6 +23,8 @@
 
     @include tablet {
       width: 174px;
+      margin-left: 0;
+      margin-right: 95px;
     }
 
     @include desktop {

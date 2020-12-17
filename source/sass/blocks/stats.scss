@@ -7,7 +7,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: 1px solid $light-grey;
+    border-radius: 2px;
+    margin: 0 0 20px;
+    min-width: 124px;
+    position: relative;
   }
 
   &__figure {
@@ -21,13 +27,25 @@
     font-family: $Arial;
     font-size: 12px;
     line-height: 1;
+    position: absolute;
+    max-width: 80px;
+    text-align: center;
+    top: 47px;
+    background-color: #eaeaea;
   }
 }
 
 .stats__item--cost {
-  width: 100%;
+  min-width: 100%;
   text-align: center;
   flex-direction: row;
+  border: none;
+  justify-content: center;
+
+  .stats__name {
+    position: static;
+    max-width: 100%;
+  }
 
   @include tablet {
     width: auto;

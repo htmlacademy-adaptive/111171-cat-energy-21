@@ -2,4 +2,24 @@
   color: $black;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+  display: flex;
+
+  &__bar {
+    width: 84px;
+    height: 14px;
+    background-color: $white;
+    border-radius: 6px;
+    border: 1px solid $light-grey;
+    box-sizing: border-box;
+    padding: 3px 5px;
+    margin: 0 17px;
+  }
+
+  &__scale {
+    width: 35px;
+    height: 6px;
+    background-color: $light-green;
+    border-radius: 6px;
+  }
 }

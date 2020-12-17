@@ -3,6 +3,7 @@
 
   @include tablet {
     display: flex;
+    justify-content: space-between;
   }
 
   &__item {
@@ -15,6 +16,12 @@
     border-top: 1px solid #e6e6e6;
     box-sizing: border-box;
 
+    @include tablet {
+      border-top: none;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
     a {
       text-decoration: none;
       padding-top: 22px;
@@ -23,6 +30,16 @@
       color: $black;
       display: block;
       box-sizing: border-box;
+
+      @include tablet {
+        padding-bottom: 11px;
+      }
+    }
+  }
+
+  &__item--active {
+    @include tablet {
+      border-bottom: 2px solid $light-green;
     }
   }
 }
