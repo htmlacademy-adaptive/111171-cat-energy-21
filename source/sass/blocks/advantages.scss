@@ -2,12 +2,27 @@
   padding-top: 7px;
   padding-bottom: 22px;
 
+  @include tablet {
+    padding-top: 16px;
+    padding-bottom: 38px;
+  }
+
+  @include desktop {
+    padding-top: 42px;
+  }
+
   &__title {
     color: $black;
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
     margin: 0 0 38px;
+
+    @include tablet {
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 73px;
+    }
   }
 
   &__list {
@@ -17,8 +32,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      row-gap: 37px;
-      column-gap: 137px;
+      row-gap: 67px;
+      column-gap: 58px;
     }
 
     @include desktop {

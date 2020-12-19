@@ -1,14 +1,17 @@
 .promo-block {
   background: $green url("/img/promo-block-bg.jpg") no-repeat center;
   padding-top: 28px;
-  padding-bottom: 164px;
+  padding-bottom: 200px;
   position: relative;
 
   @include tablet {
     background: none;
-    padding-left: 117px;
-    padding-right: 230px;
-    padding-top: 50px;
+    padding: 50px 230px 629px 117px;
+  }
+
+  @include desktop {
+    padding: 224px 675px 372px 189px;
+    position: relative;
   }
 
   &__title {
@@ -41,6 +44,10 @@
       font-size: 20px;
       margin-top: 42px;
     }
+
+    @include desktop {
+      margin-top: 40px;
+    }
   }
 
   &__img-wrapper {
@@ -49,6 +56,11 @@
 
     @include tablet {
       top: 251px;
+    }
+
+    @include desktop {
+      top: 141px;
+      right: 459px;
     }
   }
 
@@ -60,5 +72,28 @@
       top: 281px;
       left: 112px;
     }
+
+    @include desktop {
+      top: 454px;
+      left: 191px;
+    }
+  }
+
+  &__cat {
+    @include desktop {
+      position: absolute;
+      background-image: url("/img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      width: 720px;
+      height: 694px;
+      top: 0;
+      left: 720px;
+    }
+  }
+
+  &__cat-layer {
+    background-color: rgba($light-green, 0.85);
+    width: 100%;
+    height: 100%;
   }
 }

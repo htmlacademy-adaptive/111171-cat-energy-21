@@ -3,6 +3,16 @@
   flex-direction: column;
   align-items: center;
 
+  @include tablet {
+    background-color: #eaeaea;
+    padding-bottom: 68px;
+  }
+
+  @include desktop {
+    align-items: flex-end;
+    background-color: transparent;
+  }
+
   &__img-wrapper {
     margin-bottom: 31px;
   }

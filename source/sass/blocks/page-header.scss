@@ -11,6 +11,11 @@
 
   @include desktop {
     padding: 53px 110px 0;
+    position: fixed;
+    width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    z-index: 4;
   }
 
   &__logo {
@@ -29,6 +34,7 @@
 
     @include desktop {
       width: 202px;
+      margin-right: 539px;
     }
   }
 }

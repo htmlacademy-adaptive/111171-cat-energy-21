@@ -3,6 +3,13 @@
 
   @include tablet {
     flex-direction: column;
+    padding-bottom: 45px;
+    padding-right: 60px;
+    position: relative;
+  }
+
+  @include desktop {
+    padding-right: 0;
   }
 
   &__icon-wrapper {
@@ -13,10 +20,81 @@
     margin-right: 20px;
     display: flex;
     justify-content: center;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &__description {
     font-family: $Arial;
     margin: 2px 0 0;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 32px;
+      z-index: 1;
+    }
+  }
+}
+
+.advantage--first,
+.advantage--second,
+.advantage--third,
+.advantage--fourth {
+  &::before {
+    @include tablet {
+      position: absolute;
+      font-size: 280px;
+      line-height: 1;
+      color: $lightest-grey;
+      top: -40px;
+    }
+  }
+}
+
+.advantage--first::before {
+  @include tablet {
+    content: "1";
+    right: 95px;
+  }
+
+  @include desktop {
+    right: 18px;
+  }
+}
+
+.advantage--second::before {
+  @include tablet {
+    content: "2";
+    right: 79px;
+  }
+
+  @include desktop {
+    right: 2px;
+  }
+}
+
+.advantage--third::before {
+  @include tablet {
+    content: "3";
+    right: 79px;
+  }
+
+  @include desktop {
+    right: 0;
+  }
+}
+
+.advantage--fourth::before {
+  @include tablet {
+    content: "4";
+    right: 75px;
+  }
+
+  @include desktop {
+    right: -4px;
   }
 }

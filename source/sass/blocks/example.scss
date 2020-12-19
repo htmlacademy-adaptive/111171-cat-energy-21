@@ -5,6 +5,16 @@
 
   @include tablet {
     background-color: $white;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 43px;
+  }
+
+  @include desktop {
+    border-top: none;
+    padding-top: 157px;
+    position: relative;
+    background-color: $lightest-grey;
+    padding-bottom: 18px;
   }
 
   &__wrapper {
@@ -14,10 +24,14 @@
     }
   }
 
-  &__wrapper--left {
+  &__wrapper-left {
+    @include tablet {
+      max-width: 708px;
+      margin: 0 auto;
+    }
+
     @include desktop {
-      flex-basis: 36.22%;
-      display: block;
+      max-width: 448px;
     }
   }
 
@@ -27,23 +41,52 @@
     line-height: 40px;
     font-weight: 400;
     margin: 0;
+
+    @include tablet {
+      font-size: 60px;
+      line-height: 1;
+    }
+
+    @include desktop {
+      position: absolute;
+      top: 21px;
+    }
   }
 
   &__description {
     font-family: $Arial;
     margin-top: 33px;
     margin-right: 5px;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 64px;
+      padding-right: 10px;
+    }
+
+    @include desktop {
+      margin-top: 72px;
+    }
   }
 
   &__stats {
     margin-top: 24px;
+
+    @include tablet {
+      margin-top: 53px;
+    }
+
+    @include desktop {
+      margin-top: 67px;
+    }
   }
 
   &__photo {
     margin-top: 7px;
 
     @include desktop {
-      flex-basis: 57.31%;
+      flex-grow: 1;
     }
   }
 }
