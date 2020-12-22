@@ -29,6 +29,14 @@
     @include desktop {
       margin-right: 280px;
     }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &__copyright {

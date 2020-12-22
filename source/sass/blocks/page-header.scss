@@ -36,5 +36,13 @@
       width: 202px;
       margin-right: 539px;
     }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }

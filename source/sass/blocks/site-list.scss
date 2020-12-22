@@ -28,6 +28,14 @@
       color: $white;
     }
 
+    &:hover a {
+      opacity: 0.6;
+    }
+
+    &:active a {
+      opacity: 0.3;
+    }
+
     a {
       text-decoration: none;
       padding-top: 22px;

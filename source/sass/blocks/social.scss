@@ -16,9 +16,53 @@
 
   &__item--vk {
     margin-right: 36px;
+
+    &:hover svg {
+      path {
+        fill: $light-green;
+      }
+    }
+
+    &:active svg {
+      opacity: 0.3;
+
+      path {
+        fill: $light-green;
+      }
+    }
+  }
+
+  &__item--instagram {
+    &:hover svg {
+      path {
+        fill: $light-green;
+      }
+    }
+
+    &:active svg {
+      opacity: 0.3;
+
+      path {
+        fill: $light-green;
+      }
+    }
   }
 
   &__item--facebook {
     margin-left: 33px;
+
+    &:hover svg {
+      path {
+        stroke: $light-green;
+      }
+    }
+
+    &:active svg {
+      opacity: 0.3;
+
+      path {
+        stroke: $light-green;
+      }
+    }
   }
 }

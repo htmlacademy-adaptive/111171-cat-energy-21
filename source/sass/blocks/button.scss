@@ -15,6 +15,14 @@
     font-size: 20px;
     line-height: 1;
   }
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }
 
 .button--order {
