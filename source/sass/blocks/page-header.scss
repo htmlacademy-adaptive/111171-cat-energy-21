@@ -1,21 +1,26 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   position: relative;
+  box-sizing: border-box;
+  width: 100%;
 
   @include tablet {
-    padding: 23px 29px 0 30px;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 23px 0 23px;
   }
 
   @include desktop {
-    padding: 53px 110px 0;
+    padding: 53px 0 32px;
     position: fixed;
-    width: 1440px;
-    box-sizing: border-box;
-    margin: 0 auto;
     z-index: 4;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__logo {
