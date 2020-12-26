@@ -2,6 +2,8 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   @include tablet {
     padding: 23px 0 23px;
@@ -18,8 +20,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-top: 12px;
-    padding-bottom: 14px;
 
     @include tablet {
       flex-direction: row;
@@ -29,12 +29,10 @@
 
   &__logo {
     @include tablet {
-      margin-right: 95px;
       min-width: 174px;
     }
 
     @include desktop {
-      margin-right: 540px;
       min-width: 202px;
     }
 
@@ -71,7 +69,7 @@
   &__toggle--closed::before {
     content: "";
     position: absolute;
-    top: 23px;
+    top: 18px;
     right: 23px;
     height: 1.5px;
     width: 24px;
@@ -81,23 +79,27 @@
       0 12px 0 0 $black;
   }
 
-  &__toggle--opened::before,
-  &__toggle--opened::after {
+  &__toggle::before,
+  &__toggle::after {
     content: "";
     position: absolute;
-    top: 31px;
+    top: 18px;
     right: 20px;
     height: 1.5px;
     width: 25px;
     background-color: $black;
   }
 
-  &__toggle--opened::before {
+  &__toggle::before {
     transform: rotate(45deg);
     box-shadow: none;
   }
 
-  &__toggle--opened::after {
+  &__toggle::after {
     transform: rotate(-45deg);
+  }
+
+  &__toggle--closed ~ .main-nav {
+    display: none;
   }
 }

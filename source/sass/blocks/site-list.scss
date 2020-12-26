@@ -3,7 +3,11 @@
 
   @include tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+
+  @include desktop {
+    padding-bottom: 8px;
   }
 
   &__item {
@@ -20,12 +24,14 @@
       border-top: none;
       font-weight: 400;
       font-size: 18px;
+      margin-left: 36px;
     }
 
     @include desktop {
       font-size: 20px;
       line-height: 30px;
       color: $white;
+      margin-left: 35px;
     }
 
     &:hover a {
