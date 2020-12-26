@@ -1,0 +1,14 @@
+.logo-icon {
+  width: 33px;
+  height: 38px;
+
+  @include tablet {
+    width: 174px;
+    height: 52px;
+  }
+
+  @include desktop {
+    width: 202px;
+    height: 59px;
+  }
+}

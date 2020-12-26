@@ -30,10 +30,12 @@
   &__logo {
     @include tablet {
       margin-right: 95px;
+      min-width: 174px;
     }
 
     @include desktop {
       margin-right: 540px;
+      min-width: 202px;
     }
 
     &:hover {
@@ -42,21 +44,6 @@
 
     &:active {
       opacity: 0.6;
-    }
-
-    img {
-      width: 33px;
-      height: 38px;
-
-      @include tablet {
-        width: 174px;
-        height: 52px;
-      }
-
-      @include desktop {
-        width: 202px;
-        height: 59px;
-      }
     }
   }
 
@@ -68,11 +55,13 @@
 
   &__toggle {
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 21px;
     cursor: pointer;
     border: none;
     background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
 
     @include tablet {
       display: none;
