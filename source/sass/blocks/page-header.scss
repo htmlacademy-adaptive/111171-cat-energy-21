@@ -1,5 +1,4 @@
 .page-header {
-  position: relative;
   box-sizing: border-box;
   width: 100%;
   padding-top: 12px;
@@ -53,8 +52,9 @@
 
   &__toggle {
     display: inline-block;
-    width: 22px;
-    height: 21px;
+    position: relative;
+    width: 24px;
+    height: 16px;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -66,11 +66,11 @@
     }
   }
 
-  &__toggle--closed::before {
+  &__toggle::before {
     content: "";
     position: absolute;
-    top: 18px;
-    right: 23px;
+    top: 0;
+    right: 0;
     height: 1.5px;
     width: 24px;
     background-color: $black;
@@ -79,27 +79,31 @@
       0 12px 0 0 $black;
   }
 
-  &__toggle::before,
-  &__toggle::after {
+  &__toggle ~ .main-nav {
+    display: none;
+  }
+
+  &__toggle--opened::before,
+  &__toggle--opened::after {
     content: "";
     position: absolute;
-    top: 18px;
-    right: 20px;
+    top: 9px;
+    right: 0;
     height: 1.5px;
     width: 25px;
     background-color: $black;
   }
 
-  &__toggle::before {
+  &__toggle--opened::before {
     transform: rotate(45deg);
     box-shadow: none;
   }
 
-  &__toggle::after {
+  &__toggle--opened::after {
     transform: rotate(-45deg);
   }
 
-  &__toggle--closed ~ .main-nav {
-    display: none;
+  &__toggle--opened ~ .main-nav {
+    display: block;
   }
 }
