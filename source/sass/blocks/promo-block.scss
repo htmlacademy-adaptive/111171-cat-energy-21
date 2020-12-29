@@ -1,17 +1,37 @@
 .promo-block {
-  background: $green url("/img/promo-block-bg.jpg") no-repeat center;
+  background-image: url("/img/promo-block-bg.jpg"), linear-gradient(to bottom, $light-green, $light-green 303px, $white 25%);
+  background-repeat: no-repeat;
+  background-position: center top;
   padding-top: 28px;
-  padding-bottom: 200px;
-  position: relative;
+  padding-bottom: 22px;
 
   @include tablet {
     background: none;
-    padding: 50px 230px 629px 117px;
+    padding-top: 39px;
+    padding-bottom: 0;
   }
 
   @include desktop {
-    padding: 224px 675px 372px 189px;
-    position: relative;
+    background-image: url("/img/desktop-cat.jpg"), linear-gradient(to left, $light-green 50%, $white 50%);
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-top: -147px;
+  }
+
+  &__description {
+    margin-bottom: 28px;
+
+    @include tablet {
+      margin-left: 88px;
+      margin-right: 88px;
+      margin-bottom: 19px;
+    }
+
+    @include desktop {
+      margin-top: 184px;
+      margin-left: 80px;
+      max-width: 414px;
+    }
   }
 
   &__title {
@@ -50,50 +70,51 @@
     }
   }
 
-  &__img-wrapper {
-    position: absolute;
-    top: 168px;
+  &__wrapper {
+    text-align: center;
 
     @include tablet {
-      top: 251px;
+      position: relative;
+      min-height: 609px;
+      text-align: left;
     }
 
     @include desktop {
-      top: 141px;
-      right: 459px;
+      min-height: 272px;
+    }
+  }
+
+  &__img {
+    @include tablet {
+      position: absolute;
+      width: 709px;
+      right: 50%;
+      transform: translate(50%, 0);
+      z-index: -1;
+    }
+
+    @include desktop {
+      z-index: 1;
+      width: 552px;
+      transform: none;
+      top: -281px;
+      right: 221px;
     }
   }
 
   &__button {
-    position: absolute;
-    top: 441px;
+    display: block;
+    margin-top: 1px;
 
     @include tablet {
-      top: 281px;
-      left: 112px;
+      display: inline-block;
+      margin-left: 83px;
+      margin-top: 28px;
     }
 
     @include desktop {
-      top: 454px;
-      left: 191px;
+      margin-top: 32px;
+      margin-left: 80px;
     }
-  }
-
-  &__cat {
-    @include desktop {
-      position: absolute;
-      background-image: url("/img/index-background-desktop.jpg");
-      background-repeat: no-repeat;
-      width: 720px;
-      height: 694px;
-      top: 0;
-      left: 720px;
-    }
-  }
-
-  &__cat-layer {
-    background-color: rgba($light-green, 0.85);
-    width: 100%;
-    height: 100%;
   }
 }

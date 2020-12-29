@@ -10,7 +10,6 @@
 
   @include desktop {
     padding: 53px 0 32px;
-    position: fixed;
     z-index: 4;
   }
 
@@ -71,7 +70,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 1.5px;
+    height: 2px;
     width: 24px;
     background-color: $black;
     box-shadow:
@@ -81,6 +80,14 @@
 
   &__toggle ~ .main-nav {
     display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__toggle--opened {
+    height: 21px;
   }
 
   &__toggle--opened::before,
