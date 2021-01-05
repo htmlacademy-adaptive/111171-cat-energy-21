@@ -18,13 +18,21 @@
   }
 
   &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include tablet {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     @include desktop {
       display: flex;
       justify-content: space-between;
     }
   }
 
-  &__wrapper-left {
+  &__text {
     @include tablet {
       max-width: 708px;
       margin: 0 auto;
