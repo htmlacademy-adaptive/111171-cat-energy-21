@@ -6,27 +6,51 @@
   @include tablet {
     background-color: #eaeaea;
     padding-bottom: 68px;
+    background-image: linear-gradient(to bottom, $white, $white 174px, #eaeaea 25%);
   }
 
   @include desktop {
     align-items: flex-end;
+    background-image: none;
     background-color: transparent;
   }
 
   &__img-wrapper {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
     text-align: center;
 
     @include tablet {
       display: flex;
-      height: 460px;
+      height: 523px;
+      width: 708px;
+      margin-bottom: 15px;
+    }
+
+    @include desktop {
+      margin-bottom: 33px;
+    }
+  }
+
+  &__left,
+  &__right {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__before,
+  &__after {
+    @include tablet {
+      position: absolute;
+      width: 708px;
+      top: 0;
+      height: 100%;
     }
   }
 
   &__before {
     @include tablet {
-      width: 50%;
-      height: 100%;
+      left: 0;
     }
   }
 
@@ -35,8 +59,7 @@
 
     @include tablet {
       display: block;
-      width: 50%;
-      height: 100%;
+      right: 0;
     }
   }
 

@@ -6,7 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page page--background">
+  <body class="page">
     <header class="page-header">
       <div class="page-header__container container">
         <a class="page-header__logo page-header__logo--icon">
@@ -19,10 +19,10 @@
         <a class="page-header__logo page-header__logo--text">
           <img class="logo-text" src="img/text-logo.svg" width="101" height="18" alt="CatEnergy">
         </a>
-        <button class="page-header__toggle" type="button"></button>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <nav class="main-nav">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -116,14 +116,16 @@
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="example__stats stats">
-              <p class="stats__item">
-                <span class="stats__figure">5 кг</span>
-                <span class="stats__name">снижение веса</span>
-              </p>
-              <p class="stats__item">
-                <span class="stats__figure">60 дней</span>
-                <span class="stats__name stats__name--time">затрачено времени</span>
-              </p>
+              <div class="stats__wrapper">
+                <p class="stats__item">
+                  <span class="stats__figure">5 кг</span>
+                  <span class="stats__name">снижение веса</span>
+                </p>
+                <p class="stats__item">
+                  <span class="stats__figure">60 дней</span>
+                  <span class="stats__name stats__name--time">затрачено времени</span>
+                </p>
+              </div>
               <p class="stats__item stats__item--cost">
                 <span class="stats__name">Затраты на питание:</span>
                 <span class="stats__figure">15 000 руб.</span>
@@ -132,14 +134,18 @@
           </div>
           <div class="example__photo photo-slider">
             <div class="photo-slider__img-wrapper">
-              <picture class="photo-slider__before">
-                <source media="(min-width: 768px)" srcset="img/cat-fat.png">
-                <img class="photo-slider__img" src="img/before-mobile.png" width="311" height="232" alt="фото до">
-              </picture>
-              <picture class="photo-slider__after">
-                <source media="(min-width: 768px)" srcset="img/cat-skinny.png">
-                <img class="photo-slider__img" src="img/after-mobile.png" width="251" height="240" alt="фото после">
-              </picture>
+              <div class="photo-slider__left">
+                <picture class="photo-slider__before">
+                  <source media="(min-width: 768px)" srcset="img/cat-fat.png">
+                  <img class="photo-slider__img" src="img/before-mobile.png" width="311" height="232" alt="фото до">
+                </picture>
+              </div>
+              <div class="photo-slider__right">
+                <picture class="photo-slider__after">
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny.png">
+                  <img class="photo-slider__img" src="img/after-mobile.png" width="251" height="240" alt="фото после">
+                </picture>
+              </div>
             </div>
             <div class="photo-slider__toggle slider-toggle">
               <span class="slider-toggle__start">Было</span>
