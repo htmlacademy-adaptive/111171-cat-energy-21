@@ -1,7 +1,7 @@
 .example {
   background-color: #eaeaea;
   padding-top: 27px;
-  padding-bottom: 33px;
+  padding-bottom: 36px;
 
   @include tablet {
     background-color: $white;
@@ -15,6 +15,18 @@
     position: relative;
     background-image: linear-gradient(to bottom, $white, $white 157px, $lightest-grey 0%);
     padding-bottom: 18px;
+  }
+
+  &::after {
+    @include desktop {
+      content: "";
+      width: 396px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      position: absolute;
+      background-image: linear-gradient(to bottom, transparent, transparent 157px, #eaeaea 0%);
+    }
   }
 
   &__wrapper {
@@ -40,6 +52,7 @@
       max-width: 448px;
       padding-left: 0;
       padding-right: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -92,6 +105,10 @@
 
   &__photo {
     margin-top: 28px;
+
+    @include tablet {
+      margin-top: 31px;
+    }
 
     @include desktop {
       flex-grow: 1;

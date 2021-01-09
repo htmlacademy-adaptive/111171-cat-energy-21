@@ -5,7 +5,7 @@
   width: 100%;
 
   @include tablet {
-    width: 33.3%;
+    max-width: 165px;
     justify-content: flex-end;
   }
 
@@ -17,6 +17,14 @@
 
     @include tablet {
       margin-right: 24px;
+    }
+  }
+
+  &__academy-icon {
+    padding-top: 2px;
+
+    @include desktop {
+      padding-top: 5px;
     }
   }
 }

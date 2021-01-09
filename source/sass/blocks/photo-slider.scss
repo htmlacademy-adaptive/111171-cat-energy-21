@@ -13,21 +13,26 @@
     align-items: flex-end;
     background-image: none;
     background-color: transparent;
+    z-index: 1;
+    padding-bottom: 0;
   }
 
   &__img-wrapper {
     margin-bottom: 29px;
     text-align: center;
+    margin-right: 9px;
 
     @include tablet {
       display: flex;
-      height: 523px;
+      height: 522px;
       width: 708px;
-      margin-bottom: 15px;
+      margin-right: 0;
+      margin-bottom: 13px;
     }
 
     @include desktop {
-      margin-bottom: 33px;
+      margin-bottom: 34px;
+      margin-right: -68px;
     }
   }
 
@@ -42,7 +47,6 @@
   &__after {
     @include tablet {
       position: absolute;
-      width: 708px;
       top: 0;
       height: 100%;
     }
@@ -50,7 +54,12 @@
 
   &__before {
     @include tablet {
-      left: 0;
+      left: 16px;
+      width: 677px;
+    }
+
+    @include desktop {
+      left: -11px;
     }
   }
 
@@ -59,7 +68,12 @@
 
     @include tablet {
       display: block;
-      right: 0;
+      right: 56px;
+      width: 545px;
+    }
+
+    @include desktop {
+      right: 82px;
     }
   }
 

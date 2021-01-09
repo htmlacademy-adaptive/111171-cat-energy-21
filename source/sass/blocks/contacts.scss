@@ -1,8 +1,9 @@
 .contacts {
   padding-top: 29px;
+  line-height: 20px;
 
   @include tablet {
-    padding-top: 35px;
+    padding-top: 28px;
   }
 
   @include desktop {
@@ -16,18 +17,19 @@
 
     @include tablet {
       padding-left: 70px;
-      padding-right: 70px;
+      padding-right: 71px;
+      align-items: center;
     }
 
     @include desktop {
       position: absolute;
       background-color: $white;
-      top: 94px;
+      top: 96px;
       left: 110px;
       width: 570px;
-      padding-top: 67px;
+      padding-top: 64px;
       padding-left: 75px;
-      padding-bottom: 58px;
+      padding-bottom: 57px;
     }
   }
 
@@ -45,7 +47,7 @@
     }
 
     @include desktop {
-      margin-right: 75px;
+      margin-right: 76px;
     }
   }
 
@@ -55,12 +57,13 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
+    align-items: flex-start;
     margin: 0;
 
     @include tablet {
       font-size: 16px;
+      text-align: right;
+      align-items: flex-end;
     }
 
     @include desktop {
@@ -70,7 +73,7 @@
 
     span:first-child {
       @include tablet {
-        margin-bottom: 17px;
+        margin-bottom: 20px;
       }
     }
   }
