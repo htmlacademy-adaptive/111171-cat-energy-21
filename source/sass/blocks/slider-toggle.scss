@@ -2,4 +2,80 @@
   color: $black;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+  min-width: 197px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: dotted;
+    margin-left: 0;
+  }
+
+  &__bar {
+    width: 84px;
+    height: 14px;
+    background-color: $white;
+    border-radius: 6px;
+    border: 1px solid $light-grey;
+    box-sizing: border-box;
+    padding: 3px 5px;
+
+    @include tablet {
+      width: 428px;
+      height: 6px;
+      background-color: #dcdcdc;
+      border: none;
+      margin-left: 23px;
+      margin-right: 23px;
+    }
+  }
+
+  &__button {
+    width: 35px;
+    height: 6px;
+    background-color: $light-green;
+    border-radius: 6px;
+
+    @include tablet {
+      width: 34px;
+      height: 34px;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      border: 1px solid $light-grey;
+      border-radius: 50%;
+      background-color: $white;
+      position: relative;
+      margin-top: -19px;
+      margin-left: 193px;
+    }
+
+    @include desktop {
+      margin-top: -18px;
+      margin-left: 194px;
+    }
+
+    &::before {
+      @include tablet {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: $light-green;
+        top: 13px;
+        right: 13px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__start,
+  &__end {
+    @include tablet {
+      border-bottom: 1px dotted #b2b2b2;
+    }
+  }
 }

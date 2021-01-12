@@ -1,8 +1,37 @@
 .promo-block {
-  background: $green url("/img/promo-block-bg.jpg") no-repeat center;
+  background-image: url("/img/promo-block-bg.jpg"), linear-gradient(to bottom, $light-green, $light-green 303px, $white 25%);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 28px;
+  padding-bottom: 22px;
 
   @include tablet {
     background: none;
+    padding-top: 39px;
+    padding-bottom: 0;
+  }
+
+  @include desktop {
+    background-image: url("/img/desktop-cat.jpg"), linear-gradient(to left, #64a73b 50%, $white 50%);
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-top: -147px;
+  }
+
+  &__description {
+    margin-bottom: 28px;
+
+    @include tablet {
+      margin-left: 88px;
+      margin-right: 88px;
+      margin-bottom: 19px;
+    }
+
+    @include desktop {
+      margin-top: 184px;
+      margin-left: 80px;
+      max-width: 414px;
+    }
   }
 
   &__title {
@@ -11,23 +40,81 @@
     color: $white;
     font-weight: 400;
     margin: 0;
+    text-align: center;
 
     @include tablet {
       color: $black;
+      font-size: 60px;
+      text-align: left;
     }
   }
 
   &__caption {
     line-height: 1;
     color: $white;
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    box-sizing: border-box;
     text-transform: uppercase;
 
     @include tablet {
       color: $black;
+      text-align: left;
+      font-size: 20px;
+      margin-top: 42px;
+    }
+
+    @include desktop {
+      margin-top: 40px;
+    }
+  }
+
+  &__wrapper {
+    text-align: center;
+
+    @include tablet {
+      position: relative;
+      min-height: 609px;
+      text-align: left;
+    }
+
+    @include desktop {
+      min-height: 272px;
+    }
+  }
+
+  &__img {
+    @include tablet {
+      position: absolute;
+      width: 709px;
+      right: 50%;
+      transform: translate(50%, 0);
+      z-index: -1;
+    }
+
+    @include desktop {
+      z-index: 1;
+      width: 552px;
+      transform: none;
+      top: -281px;
+      right: 221px;
     }
   }
 
   &__button {
-    min-width: 244px;
+    display: block;
+    margin-top: 1px;
+
+    @include tablet {
+      display: inline-block;
+      margin-left: 83px;
+      margin-top: 28px;
+    }
+
+    @include desktop {
+      margin-top: 32px;
+      margin-left: 80px;
+    }
   }
 }

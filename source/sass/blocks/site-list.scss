@@ -3,6 +3,11 @@
 
   @include tablet {
     display: flex;
+    justify-content: flex-end;
+  }
+
+  @include desktop {
+    padding-bottom: 8px;
   }
 
   &__item {
@@ -15,14 +20,56 @@
     border-top: 1px solid #e6e6e6;
     box-sizing: border-box;
 
+    @include tablet {
+      border-top: none;
+      font-weight: 400;
+      font-size: 18px;
+      margin-left: 36px;
+    }
+
+    @include desktop {
+      font-size: 20px;
+      line-height: 30px;
+      color: $white;
+      margin-left: 35px;
+    }
+
+    &:hover a {
+      opacity: 0.6;
+    }
+
+    &:active a {
+      opacity: 0.3;
+    }
+
     a {
       text-decoration: none;
+      padding-top: 22px;
+      padding-bottom: 23px;
+      text-align: center;
       color: $black;
-      min-height: 66px;
+      display: block;
       box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+      @include tablet {
+        padding-bottom: 11px;
+      }
+
+      @include desktop {
+        padding-bottom: 6px;
+        padding-top: 16px;
+        color: $white;
+      }
+    }
+  }
+
+  &__item--active {
+    @include tablet {
+      border-bottom: 2px solid $light-green;
+    }
+
+    @include desktop {
+      border-bottom: 2px solid $white;
     }
   }
 }

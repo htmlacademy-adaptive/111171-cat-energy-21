@@ -1,6 +1,36 @@
 .contacts {
+  padding-top: 29px;
+  line-height: 20px;
+
+  @include tablet {
+    padding-top: 28px;
+  }
+
+  @include desktop {
+    position: relative;
+    padding-top: 0;
+  }
+
   &__wrapper {
     display: flex;
+    box-sizing: border-box;
+
+    @include tablet {
+      padding-left: 70px;
+      padding-right: 71px;
+      align-items: center;
+    }
+
+    @include desktop {
+      position: absolute;
+      background-color: $white;
+      top: 96px;
+      left: 110px;
+      width: 570px;
+      padding-top: 64px;
+      padding-left: 75px;
+      padding-bottom: 57px;
+    }
   }
 
   &__caption {
@@ -9,12 +39,64 @@
     font-weight: 400;
     text-transform: uppercase;
     width: 50%;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 24px;
+      margin-right: 235px;
+    }
+
+    @include desktop {
+      margin-right: 76px;
+    }
   }
 
   &__address {
     font-family: $Arial;
     line-height: 20px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+
+    @include tablet {
+      font-size: 16px;
+      text-align: right;
+      align-items: flex-end;
+    }
+
+    @include desktop {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    span:first-child {
+      @include tablet {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__map {
+    margin-top: 25px;
+    background-color: $lightest-grey;
+
+    @include tablet {
+      margin-top: 58px;
+    }
+
+    @include desktop {
+      margin-top: 0;
+    }
+
+    iframe {
+      height: 362px;
+
+      @include tablet {
+        height: 400px;
+      }
+    }
   }
 }
 
