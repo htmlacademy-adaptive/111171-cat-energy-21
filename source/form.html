@@ -38,43 +38,52 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__caption">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
+      <div class="page-main__wrapper container">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <p class="page-main__caption">
+          Заполните анкету, и мы подберем <br> программу питания для вашего кота
+        </p>
+      </div>
       <section class="program-form">
         <form class="program-form__list">
           <div class="program-form__container">
             <div class="program-form__wrapper">
               <fieldset class="program-form__fieldset fieldset">
-                <p class="fieldset__item field container">
-                  <label class="field__name" for="name">Имя:*</label>
-                  <input class="field__value" type="text" placeholder="Барсик" id="name" required>
-                </p>
-                <p class="fieldset__item field">
-                  <label class="field__name" for="weight">Вес (кг):*</label>
-                  <input class="field__value" type="text" placeholder="7" id="weight" required>
-                </p>
-                <p class="fieldset__item field">
-                  <label class="field__name" for="age">Возраст (лет):</label>
-                  <input class="field__value" type="text" placeholder="7" id="age">
-                </p>
+                <div class="fieldset__container">
+                  <p class="fieldset__item field">
+                    <label class="field__name" for="name">Имя:*</label>
+                    <input class="field__value" type="text" placeholder="Барсик" id="name" required>
+                  </p>
+                  <p class="fieldset__item field field--weight">
+                    <label class="field__name" for="weight">Вес (кг):*</label>
+                    <input class="field__value" type="text" placeholder="7" id="weight" required>
+                  </p>
+                  <p class="fieldset__item field field--age">
+                    <label class="field__name" for="age">Возраст (лет):</label>
+                    <input class="field__value" type="text" placeholder="7" id="age">
+                  </p>
+                </div>
               </fieldset>
             </div>
             <div class="program-form__wrapper">
-              <fieldset class="program-form__fieldset fieldset">
-                <p class="fieldset__item radio">
-                  <label class="radio__name" for="goal-diet">Похудение</label>
-                  <input class="visually-hidden" type="radio" name="goal" value="diet" id="goal-diet" checked>
-                </p>
-                <p class="fieldset__item radio">
-                  <label class="radio__name" for="goal-mass">Набор массы</label>
-                  <input class="visually-hidden" type="radio" name="goal" value="mass" id="goal-mass">
-                </p>
-                <p class="fieldset__item radio">
-                  <label class="radio__name" for="goal-advice">Не знаю (нужен ваш совет)</label>
-                  <input class="visually-hidden" type="radio" name="goal" value="advice" id="goal-advice">
-                </p>
+              <fieldset class="program-form__fieldset fieldset fieldset--goal">
+                <div class="fieldset__container">
+                  <p class="fieldset__item radio">
+                    <input class="visually-hidden" type="radio" name="goal" value="diet" id="goal-diet" checked>
+                    <span class="radio__button"></span>
+                    <label class="radio__name" for="goal-diet">Похудение</label>
+                  </p>
+                  <p class="fieldset__item radio">
+                    <input class="visually-hidden" type="radio" name="goal" value="mass" id="goal-mass">
+                    <span class="radio__button"></span>
+                    <label class="radio__name" for="goal-mass">Набор массы</label>
+                  </p>
+                  <p class="fieldset__item radio">
+                    <input class="visually-hidden" type="radio" name="goal" value="advice" id="goal-advice">
+                    <span class="radio__button"></span>
+                    <label class="radio__name" for="goal-advice">Не знаю (нужен ваш совет)</label>
+                  </p>
+                </div>
               </fieldset>
             </div>
           </div>
@@ -91,13 +100,13 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="program-form__fieldset fieldset container">
+          <fieldset class="program-form__fieldset fieldset">
             <legend class="fieldset__title">Комментарий</legend>
             <textarea class="fieldset__item textarea">
               Расскажите обо всех повадках кота
             </textarea>
           </fieldset>
-          <fieldset class="program-form__fieldset fieldset container">
+          <fieldset class="program-form__fieldset fieldset">
             <legend class="fieldset__title">Дополнительно</legend>
             <div class="fieldset__wrapper">
               <p class="fieldset__item checkbox">

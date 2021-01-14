@@ -1,4 +1,6 @@
 .program-form {
+  padding-top: 19px;
+
   &__container {
     @include desktop {
       display: flex;

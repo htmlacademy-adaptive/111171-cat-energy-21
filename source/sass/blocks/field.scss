@@ -1,22 +1,47 @@
 .field {
   display: flex;
+  align-items: center;
 
   &__name {
     font-size: 16px;
     text-transform: uppercase;
+    margin-right: 13px;
   }
 
   &__value,
   &__value::placeholder {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 41px;
     color: $darker-grey;
     text-transform: uppercase;
+    font-family: $Oswald;
   }
 
   &__value {
     border: 1px solid #e7e7e7;
     flex-grow: 1;
+    width: 0;
+    padding-left: 14px;
+  }
+}
+
+.field--weight {
+  .field__name {
+    margin-right: 16px;
+  }
+
+  .field__value {
+    padding-left: 15px;
+  }
+}
+
+.field--age {
+  .field__name {
+    margin-right: 14px;
+  }
+
+  .field__value {
+    padding-left: 16px;
   }
 }
 

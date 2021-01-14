@@ -1,9 +1,25 @@
 .radio {
-  padding-left: 65px;
+  display: flex;
+  align-items: center;
+
+  &__button {
+    display: block;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    border: 8px solid $white;
+    box-shadow: 0 0 0 1px $light-grey;
+    box-sizing: border-box;
+    margin-right: 17px;
+  }
 
   &__name {
     color: $darkest-grey;
     font-size: 16px;
     text-transform: uppercase;
+  }
+
+  input:checked ~ .radio__button {
+    background-color: $light-green;
   }
 }

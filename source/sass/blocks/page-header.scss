@@ -1,8 +1,9 @@
 .page-header {
   box-sizing: border-box;
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #d9d9d9;
 
   @include tablet {
     padding: 23px 0 23px;
@@ -44,6 +45,9 @@
   }
 
   &__logo--text {
+    padding-top: 7px;
+    padding-right: 10px;
+
     @include tablet {
       display: none;
     }
@@ -74,8 +78,8 @@
     width: 24px;
     background-color: $black;
     box-shadow:
-      0 6px 0 0 $black,
-      0 12px 0 0 $black;
+      0 7px 0 0 $black,
+      0 14px 0 0 $black;
   }
 
   &__toggle ~ .main-nav {

@@ -1,5 +1,16 @@
 .fieldset {
   border: none;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 9px;
+
+  &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   &__title {
     color: $black;
@@ -18,5 +29,20 @@
     @include desktop {
       display: flex;
     }
+  }
+
+  &__item {
+    margin-top: 0;
+  }
+}
+
+.fieldset--goal {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 23px;
+  padding-bottom: 4px;
+
+  .fieldset__item {
+    margin-bottom: 14px;
   }
 }
