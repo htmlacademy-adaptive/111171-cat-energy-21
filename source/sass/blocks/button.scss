@@ -39,3 +39,22 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.button--form {
+  background-color: $light-green;
+  color: $white;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $Oswald;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include tablet {
+    font-size: 20px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

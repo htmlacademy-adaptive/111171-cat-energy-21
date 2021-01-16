@@ -7,6 +7,7 @@
 
   @include tablet {
     padding: 23px 0 23px;
+    border-bottom: none;
   }
 
   @include desktop {
@@ -50,6 +51,12 @@
 
     @include tablet {
       display: none;
+    }
+  }
+
+  &__logo--form {
+    @include tablet {
+      padding-top: 2px;
     }
   }
 

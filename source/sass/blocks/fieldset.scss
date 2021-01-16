@@ -10,12 +10,49 @@
   &__container {
     padding-left: 20px;
     padding-right: 20px;
+
+    @include tablet {
+      padding-left: 71px;
+      padding-right: 66px;
+    }
+  }
+
+  &__title-wrp {
+    display: flex;
+    align-items: center;
   }
 
   &__title {
     color: $black;
     font-size: 24px;
     line-height: 26px;
+    padding-right: 0;
+    padding-left: 20px;
+    flex-grow: 1;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 1;
+      padding-left: 0;
+      margin-left: 39px;
+    }
+  }
+
+  &__title-wrp::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $light-green;
+    margin-top: 7px;
+  }
+
+  &__title-wrp::before {
+    @include tablet {
+      content: "";
+      height: 2px;
+      background-color: $light-green;
+      margin-top: 7px;
+    }
   }
 
   &__wrapper {
@@ -34,6 +71,16 @@
   &__item {
     margin-top: 0;
   }
+
+  &__border {
+    @include tablet {
+      border: 1px solid #e7e7e7;
+      padding-top: 25px;
+      padding-left: 27px;
+      padding-right: 27px;
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .fieldset--goal {
@@ -42,7 +89,117 @@
   padding-top: 23px;
   padding-bottom: 4px;
 
+  @include tablet {
+    border: none;
+    padding-top: 43px;
+  }
+
   .fieldset__item {
     margin-bottom: 14px;
+  }
+}
+
+.fieldset--contacts {
+  @include tablet {
+    padding-top: 45px;
+  }
+
+  .fieldset__title {
+    min-width: 201px;
+    padding-top: 26px;
+
+    @include tablet {
+      min-width: 515px;
+      margin-right: 40px;
+    }
+  }
+
+  .fieldset__container {
+    @include tablet {
+      padding-left: 68px;
+    }
+  }
+
+  .fieldset__title-wrp {
+    margin-bottom: 35px;
+
+    @include tablet {
+      margin-bottom: 76px;
+    }
+  }
+
+  .fieldset__title-wrp::before,
+  .fieldset__title-wrp::after {
+    @include tablet {
+      margin-top: 35px;
+    }
+  }
+
+  .fieldset__title-wrp::before {
+    width: 21%;
+  }
+}
+
+.fieldset--comment {
+  @include tablet {
+    padding-top: 36px;
+  }
+
+  .fieldset__title {
+    min-width: 142px;
+
+    @include tablet {
+      min-width: 185px;
+      margin-right: 38px;
+    }
+  }
+
+  .fieldset__title-wrp {
+    margin-bottom: 39px;
+
+    @include tablet {
+      margin-bottom: 76px;
+    }
+  }
+
+  .fieldset__title-wrp::before {
+    width: 6%;
+  }
+}
+
+.fieldset--additional {
+  @include tablet {
+    padding-top: 43px;
+  }
+
+  .fieldset__title {
+    min-width: 164px;
+    padding-top: 11px;
+
+    @include tablet {
+      min-width: 215px;
+      margin-right: 41px;
+    }
+  }
+
+  .fieldset__title-wrp {
+    margin-bottom: 34px;
+
+    @include tablet {
+      margin-bottom: 56px;
+    }
+  }
+
+  .fieldset__title-wrp::after {
+    margin-top: 17px;
+
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
+
+  .fieldset__title-wrp::before {
+    width: 7%;
+    margin-top: 20px;
   }
 }

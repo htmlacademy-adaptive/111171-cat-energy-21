@@ -1,5 +1,11 @@
 .program-form {
   padding-top: 19px;
+  padding-bottom: 32px;
+
+  @include tablet {
+    padding-top: 46px;
+    padding-bottom: 72px;
+  }
 
   &__container {
     @include desktop {
@@ -20,13 +26,16 @@
     }
   }
 
-  &__flex {
-    padding: 0 20px;
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
 
     @include tablet {
-      padding-left: 70px;
+      padding-left: 71px;
       padding-right: 70px;
-      display: flex;
+      flex-direction: row;
+      padding-top: 31px;
     }
 
     @include desktop {
@@ -39,18 +48,18 @@
     color: $black;
     line-height: 16px;
     font-family: $Arial;
+    text-align: center;
+    margin-top: 21px;
 
     @include tablet {
-      flex-basis: 50%;
+      font-size: 16px;
+      line-height: 1;
     }
   }
 
   &__submit {
-    min-width: 100%;
-
     @include tablet {
-      flex-basis: 50%;
-      min-width: auto;
+      margin-right: 63px;
     }
 
     @include desktop {

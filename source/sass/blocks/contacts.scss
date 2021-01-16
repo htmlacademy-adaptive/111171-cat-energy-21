@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 29px;
+  padding-top: 34px;
   line-height: 20px;
 
   @include tablet {
@@ -79,7 +79,7 @@
   }
 
   &__map {
-    margin-top: 25px;
+    margin-top: 20px;
     background-color: $lightest-grey;
 
     @include tablet {
@@ -102,4 +102,9 @@
 
 .contacts--index {
   background-color: $white;
+  padding-top: 29px;
+
+  .contacts__map {
+    margin-top: 25px;
+  }
 }
