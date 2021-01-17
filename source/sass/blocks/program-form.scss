@@ -7,22 +7,27 @@
     padding-bottom: 72px;
   }
 
+  &__item--goal {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &__border {
+    border-top: 2px solid $light-green;
+  }
+
+  &__item--contacts {
+    margin-top: 42px;
+  }
+
+  &__item--comment {
+    margin-top: 16px;
+  }
+
   &__container {
     @include desktop {
       display: flex;
       padding: 0 110px;
-    }
-  }
-
-  &__wrapper {
-    @include desktop {
-      flex-basis: 50%;
-    }
-
-    &:first-child {
-      @include desktop {
-        margin-right: 80px;
-      }
     }
   }
 
