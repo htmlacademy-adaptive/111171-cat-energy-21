@@ -7,6 +7,10 @@
     flex-basis: 50%;
   }
 
+  @include desktop {
+    flex-basis: auto;
+  }
+
   &__box {
     display: block;
     width: 30px;
@@ -49,6 +53,10 @@
   @include tablet {
     margin-bottom: 30px;
   }
+
+  @include desktop {
+    margin-right: 78px;
+  }
 }
 
 .checkbox--water {
@@ -58,10 +66,18 @@
     margin-bottom: 32px;
     padding-left: 28px;
   }
+
+  @include desktop {
+    margin-right: 139px;
+  }
 }
 
 .checkbox--milk {
   margin-bottom: 11px;
+
+  @include desktop {
+    margin-right: 172px;
+  }
 }
 
 .checkbox--vitamins {

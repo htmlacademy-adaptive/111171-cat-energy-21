@@ -7,11 +7,23 @@
     padding-bottom: 72px;
   }
 
-  // &__item--base {
-  //   @include desktop {
-  //     flex-basis: ;
-  //   }
-  // }
+  @include desktop {
+    padding-bottom: 80px;
+  }
+
+  &__wrapper {
+    @include desktop {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__item--base {
+    @include desktop {
+      margin-right: 80px;
+      flex-basis: 50%;
+    }
+  }
 
   &__item--goal {
     border-top: 1px solid #d9d9d9;
@@ -21,6 +33,11 @@
       margin-top: 43px;
       border-top: none;
       border-bottom: none;
+    }
+
+    @include desktop {
+      margin-top: 0;
+      flex-basis: 50%;
     }
   }
 
@@ -35,12 +52,16 @@
       margin-top: 97px;
     }
 
+    @include desktop {
+      margin-top: 62px;
+    }
+
     .container-form {
       margin-top: -19px;
-      padding-left: 20px;
 
       @include tablet {
         margin-top: -69px;
+        padding-left: 20px;
       }
     }
   }
@@ -50,6 +71,10 @@
 
     @include tablet {
       margin-top: 58px;
+    }
+
+    @include desktop {
+      margin-top: 60px;
     }
 
     .container-form {
@@ -68,6 +93,10 @@
       margin-top: 61px;
     }
 
+    @include desktop {
+      margin-top: 63px;
+    }
+
     .container-form {
       margin-top: -17px;
 
@@ -79,9 +108,9 @@
 
   &__container {
     @include desktop {
-      padding: 0 110px;
+      max-width: 1220px;
+      margin: 0 auto;
       display: flex;
-      justify-content: stretch;
     }
   }
 
@@ -94,13 +123,14 @@
     @include tablet {
       padding-left: 71px;
       padding-right: 70px;
-      flex-direction: row;
       padding-top: 31px;
+      flex-direction: row;
     }
 
     @include desktop {
-      padding-left: 110px;
-      padding-right: 110px;
+      padding-top: 21px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 
@@ -121,6 +151,10 @@
       padding-left: 29px;
       font-size: 16px;
       line-height: 1;
+    }
+
+    @include desktop {
+      padding-bottom: 0;
     }
   }
 
@@ -155,9 +189,7 @@
     }
 
     @include desktop {
-      flex-basis: auto;
-      min-width: 568px;
-      margin-right: 81px;
+      margin-right: 83px;
     }
   }
 }

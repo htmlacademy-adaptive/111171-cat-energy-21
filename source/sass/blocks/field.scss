@@ -33,7 +33,6 @@
   &__value {
     border: 1px solid #e7e7e7;
     flex-grow: 1;
-    width: 0;
   }
 
   &__input-wrapper {
@@ -62,6 +61,10 @@
 
     @include tablet {
       padding-left: 18px;
+    }
+
+    @include desktop {
+      padding-left: 20px;
     }
   }
 }
@@ -103,35 +106,46 @@
 }
 
 .field--mail {
+  @include desktop {
+    flex-basis: 50%;
+    margin-right: 77px;
+  }
+
   .field__name {
     margin-right: 11px;
     padding-bottom: 6px;
 
     @include tablet {
       padding-bottom: 0;
-      padding-left: 3px;
       margin-right: 19px;
+    }
+
+    @include desktop {
+      margin-right: 21px;
+      padding-left: 1px;
     }
   }
 
   .field__value {
     padding-left: 14px;
+    background: url("/img/icon_email.svg") 93% center no-repeat;
 
     @include tablet {
       padding-left: 20px;
     }
-  }
 
-  .field__input-wrapper {
-    background: url("/img/icon_email.svg") 93% center no-repeat;
-
-    @include tablet {
-      background-position-x: 97%;
+    @include desktop {
+      padding-left: 18px;
+      background-position-x: 96%;
     }
   }
 }
 
 .field--phone {
+  @include desktop {
+    flex-basis: 50%;
+  }
+
   .field__name {
     margin-right: 9px;
     padding-bottom: 6px;
@@ -144,18 +158,13 @@
 
   .field__value {
     padding-left: 15px;
-    background-color: transparent;
+    background: url("/img/icon_phone.svg") 93% center no-repeat;
 
     @include tablet {
       padding-left: 19px;
     }
-  }
 
-  .field__input-wrapper {
-    padding-right: 20px;
-    background: url("/img/icon_phone.svg") 93% center no-repeat;
-
-    @include tablet {
+    @include desktop {
       background-position-x: 97%;
     }
   }

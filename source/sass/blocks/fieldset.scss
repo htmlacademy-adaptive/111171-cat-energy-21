@@ -31,6 +31,7 @@
     @include tablet {
       display: flex;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
   }
 
@@ -97,8 +98,8 @@
   }
 
   .fieldset__container {
-    @include tablet {
-      padding-left: 68px;
+    @include desktop {
+      display: flex;
     }
   }
 }
@@ -134,22 +135,6 @@
       margin-left: -40px;
       padding-right: 42px;
       margin-bottom: 56px;
-    }
-  }
-
-  .fieldset__title-wrp {
-    margin-bottom: 34px;
-
-    @include tablet {
-      margin-bottom: 56px;
-    }
-  }
-
-  .fieldset__title-wrp::after {
-    margin-top: 17px;
-
-    @include tablet {
-      margin-top: 20px;
     }
   }
 }

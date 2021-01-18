@@ -54,4 +54,8 @@
     padding: 17px 64px;
     font-size: 20px;
   }
+
+  @include desktop {
+    padding: 16px 208px;
+  }
 }
