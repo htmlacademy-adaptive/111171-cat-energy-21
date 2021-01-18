@@ -20,7 +20,8 @@
   box-sizing: border-box;
 
   @include tablet {
-    max-width: 670px;
+    max-width: 673px;
+    padding-left: 23px;
   }
 
   @include desktop {

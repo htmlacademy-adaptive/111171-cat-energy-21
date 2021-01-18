@@ -21,10 +21,9 @@
     flex-grow: 1;
 
     @include tablet {
+      padding-left: 39px;
       font-size: 36px;
       line-height: 1;
-      padding-left: 0;
-      margin-left: 39px;
     }
   }
 
@@ -57,12 +56,12 @@
 }
 
 .fieldset--goal {
-  padding-top: 23px;
   padding-bottom: 4px;
+  padding-top: 23px;
 
   @include tablet {
-    border: none;
-    padding-top: 43px;
+    padding: 25px 27px 10px;
+    border: 1px solid #e7e7e7;
   }
 
   .fieldset__item {
@@ -77,8 +76,13 @@
 
   .fieldset__title {
     padding-right: 22px;
-    margin-top: -19px;
     margin-bottom: 36px;
+
+    @include tablet {
+      padding-right: 39px;
+      margin-bottom: 76px;
+      margin-left: -38px;
+    }
 
     br {
       @include tablet {
@@ -105,25 +109,15 @@
   }
 
   .fieldset__title {
-    padding-right: 27px;
-    margin-top: -19px;
+    padding-right: 23px;
+    margin-bottom: 38px;
 
     @include tablet {
-      min-width: 185px;
       margin-right: 38px;
-    }
-  }
-
-  .fieldset__title-wrp {
-    margin-bottom: 39px;
-
-    @include tablet {
+      margin-left: -40px;
       margin-bottom: 76px;
+      padding-right: 39px;
     }
-  }
-
-  .fieldset__title-wrp::before {
-    width: 6%;
   }
 }
 
@@ -133,12 +127,13 @@
   }
 
   .fieldset__title {
-    min-width: 164px;
-    padding-top: 11px;
+    padding-right: 24px;
+    margin-bottom: 34px;
 
     @include tablet {
-      min-width: 215px;
-      margin-right: 41px;
+      margin-left: -40px;
+      padding-right: 42px;
+      margin-bottom: 56px;
     }
   }
 
@@ -156,10 +151,5 @@
     @include tablet {
       margin-top: 20px;
     }
-  }
-
-  .fieldset__title-wrp::before {
-    width: 7%;
-    margin-top: 20px;
   }
 }

@@ -7,9 +7,21 @@
     padding-bottom: 72px;
   }
 
+  // &__item--base {
+  //   @include desktop {
+  //     flex-basis: ;
+  //   }
+  // }
+
   &__item--goal {
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
+
+    @include tablet {
+      margin-top: 43px;
+      border-top: none;
+      border-bottom: none;
+    }
   }
 
   &__border {
@@ -17,24 +29,67 @@
   }
 
   &__item--contacts {
-    margin-top: 42px;
+    margin-top: 43px;
+
+    @include tablet {
+      margin-top: 97px;
+    }
+
+    .container-form {
+      margin-top: -19px;
+      padding-left: 20px;
+
+      @include tablet {
+        margin-top: -69px;
+      }
+    }
   }
 
   &__item--comment {
     margin-top: 16px;
+
+    @include tablet {
+      margin-top: 58px;
+    }
+
+    .container-form {
+      margin-top: -17px;
+
+      @include tablet {
+        margin-top: -60px;
+      }
+    }
+  }
+
+  &__item--additional {
+    margin-top: 12px;
+
+    @include tablet {
+      margin-top: 61px;
+    }
+
+    .container-form {
+      margin-top: -17px;
+
+      @include tablet {
+        margin-top: -67px;
+      }
+    }
   }
 
   &__container {
     @include desktop {
-      display: flex;
       padding: 0 110px;
+      display: flex;
+      justify-content: stretch;
     }
   }
 
   &__footer {
     display: flex;
-    flex-direction: column;
     padding-top: 12px;
+    flex-direction: column;
+    align-items: center;
 
     @include tablet {
       padding-left: 71px;
@@ -50,20 +105,52 @@
   }
 
   &__caption {
-    color: $black;
-    line-height: 16px;
-    font-family: $Arial;
-    text-align: center;
+    position: relative;
+    display: block;
+    max-width: 160px;
     margin-top: 21px;
+    padding-left: 27px;
+    font-family: $Arial;
+    line-height: 16px;
+    text-align: center;
+    color: $black;
 
     @include tablet {
+      margin-top: 0;
+      padding-bottom: 3px;
+      padding-left: 29px;
       font-size: 16px;
       line-height: 1;
     }
   }
 
-  &__submit {
+  &__caption::before {
+    content: "*";
+    position: absolute;
+    left: 0;
+  }
+
+  &__caption::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    width: 14px;
+    height: 1px;
+    background-color: $black;
+
     @include tablet {
+      top: 7px;
+      left: 9px;
+      width: 16px;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+
+    @include tablet {
+      width: auto;
       margin-right: 63px;
     }
 
