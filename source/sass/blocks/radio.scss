@@ -1,9 +1,37 @@
 .radio {
-  padding-left: 65px;
+  display: flex;
+  align-items: center;
+
+  &__button {
+    display: block;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    border: 8px solid $white;
+    box-shadow: 0 0 0 1px $light-grey;
+    box-sizing: border-box;
+    margin-right: 17px;
+
+    @include tablet {
+      width: 39px;
+      height: 39px;
+      border-width: 10px;
+      margin-right: 21px;
+    }
+  }
 
   &__name {
     color: $darkest-grey;
     font-size: 16px;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  input:checked ~ .radio__button {
+    background-color: $light-green;
   }
 }

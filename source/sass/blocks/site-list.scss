@@ -30,36 +30,34 @@
     @include desktop {
       font-size: 20px;
       line-height: 30px;
-      color: $white;
       margin-left: 35px;
     }
 
-    &:hover a {
+    &:hover .site-list__link {
       opacity: 0.6;
     }
 
-    &:active a {
+    &:active .site-list__link {
       opacity: 0.3;
     }
+  }
 
-    a {
-      text-decoration: none;
-      padding-top: 22px;
-      padding-bottom: 23px;
-      text-align: center;
-      color: $black;
-      display: block;
-      box-sizing: border-box;
+  &__link {
+    text-decoration: none;
+    padding-top: 22px;
+    padding-bottom: 23px;
+    text-align: center;
+    color: $black;
+    display: block;
+    box-sizing: border-box;
 
-      @include tablet {
-        padding-bottom: 11px;
-      }
+    @include tablet {
+      padding-bottom: 11px;
+    }
 
-      @include desktop {
-        padding-bottom: 6px;
-        padding-top: 16px;
-        color: $white;
-      }
+    @include desktop {
+      padding-bottom: 6px;
+      padding-top: 16px;
     }
   }
 
@@ -67,7 +65,17 @@
     @include tablet {
       border-bottom: 2px solid $light-green;
     }
+  }
+}
 
+.site-list--index {
+  .site-list__link {
+    @include desktop {
+      color: $white;
+    }
+  }
+
+  .site-list__item--active {
     @include desktop {
       border-bottom: 2px solid $white;
     }

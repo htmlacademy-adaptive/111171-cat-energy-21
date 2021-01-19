@@ -1,22 +1,140 @@
 .fieldset {
   border: none;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 9px;
 
   &__title {
-    color: $black;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: -20px;
+    padding-top: 0;
+    padding-left: 19px;
     font-size: 24px;
     line-height: 26px;
+    font-weight: 400;
+    color: $black;
+    background-color: $white;
+    flex-grow: 1;
+
+    @include tablet {
+      padding-left: 39px;
+      font-size: 36px;
+      line-height: 1;
+    }
   }
 
   &__wrapper {
     @include tablet {
       display: flex;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
   }
 
   &__flex {
     @include desktop {
       display: flex;
+    }
+  }
+
+  &__item {
+    margin-bottom: 14px;
+  }
+
+  &__border {
+    @include tablet {
+      border: 1px solid #e7e7e7;
+      padding-top: 25px;
+      padding-left: 27px;
+      padding-right: 27px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.fieldset--goal {
+  padding-bottom: 4px;
+  padding-top: 23px;
+
+  @include tablet {
+    padding: 25px 27px 10px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .fieldset__item {
+    margin-bottom: 14px;
+  }
+}
+
+.fieldset--contacts {
+  @include tablet {
+    padding-top: 45px;
+  }
+
+  .fieldset__title {
+    padding-right: 22px;
+    margin-bottom: 36px;
+
+    @include tablet {
+      padding-right: 39px;
+      margin-bottom: 76px;
+      margin-left: -38px;
+    }
+
+    br {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      min-width: 515px;
+      margin-right: 40px;
+    }
+  }
+
+  .fieldset__container {
+    @include desktop {
+      display: flex;
+    }
+  }
+}
+
+.fieldset--comment {
+  @include tablet {
+    padding-top: 36px;
+  }
+
+  .fieldset__title {
+    padding-right: 23px;
+    margin-bottom: 38px;
+
+    @include tablet {
+      margin-right: 38px;
+      margin-left: -40px;
+      margin-bottom: 76px;
+      padding-right: 39px;
+    }
+  }
+}
+
+.fieldset--additional {
+  @include tablet {
+    padding-top: 43px;
+  }
+
+  .fieldset__title {
+    padding-right: 24px;
+    margin-bottom: 34px;
+
+    @include tablet {
+      margin-left: -40px;
+      padding-right: 42px;
+      margin-bottom: 56px;
     }
   }
 }

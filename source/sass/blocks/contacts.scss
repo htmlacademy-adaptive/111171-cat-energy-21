@@ -1,9 +1,9 @@
 .contacts {
-  padding-top: 29px;
+  padding-top: 34px;
   line-height: 20px;
 
   @include tablet {
-    padding-top: 28px;
+    padding-top: 61px;
   }
 
   @include desktop {
@@ -42,7 +42,7 @@
 
     @include tablet {
       font-size: 20px;
-      line-height: 24px;
+      line-height: 27px;
       margin-right: 235px;
     }
 
@@ -79,7 +79,7 @@
   }
 
   &__map {
-    margin-top: 25px;
+    margin-top: 20px;
     background-color: $lightest-grey;
 
     @include tablet {
@@ -102,4 +102,19 @@
 
 .contacts--index {
   background-color: $white;
+  padding-top: 29px;
+
+  @include tablet {
+    padding-top: 28px;
+  }
+
+  .contacts__caption {
+    @include tablet {
+      line-height: 24px;
+    }
+  }
+
+  .contacts__map {
+    margin-top: 25px;
+  }
 }

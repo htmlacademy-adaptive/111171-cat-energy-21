@@ -12,3 +12,9 @@
     background-color: transparent;
   }
 }
+
+.main-nav--form {
+  @include tablet {
+    margin-bottom: 5px;
+  }
+}
