@@ -1,4 +1,6 @@
 .catalog {
+  border-top: 1px solid $lighter-grey;
+
   &__list {
     @include list-styles-reset;
 

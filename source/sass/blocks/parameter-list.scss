@@ -4,14 +4,20 @@
 
   &__name,
   &__value {
+    min-width: 40px;
+    box-sizing: border-box;
     font-family: $Arial;
     font-size: 12px;
     line-height: 16px;
-    flex-basis: 50%;
+  }
+
+  &__name {
+    margin-right: 60px;
   }
 
   &__value {
     margin-left: 0;
+    text-align: right;
   }
 }
 
