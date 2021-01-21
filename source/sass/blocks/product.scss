@@ -1,5 +1,7 @@
 .product {
   padding-top: 21px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $lightest-grey;
 
   @include tablet {
     flex-direction: column;
@@ -15,7 +17,6 @@
 
   &__image-wrapper {
     display: flex;
-    padding-bottom: 6px;
     flex-basis: 50%;
     justify-content: center;
     align-items: center;
@@ -49,5 +50,75 @@
     @include tablet {
       flex-basis: auto;
     }
+  }
+}
+
+.product--chicken-small {
+  .product__image-wrapper {
+    padding-top: 7px;
+  }
+
+  .product__button {
+    margin-top: 21px;
+  }
+}
+
+.product--chicken-big {
+  .product__image-wrapper {
+    padding-top: 9px;
+  }
+
+  .product__button {
+    margin-top: 13px;
+  }
+}
+
+.product--fish-small {
+  .product__image-wrapper {
+    padding-top: 25px;
+  }
+
+  .product__button {
+    margin-top: 20px;
+  }
+}
+
+.product--fish-big {
+  .product__image-wrapper {
+    padding-top: 9px;
+  }
+
+  .product__button {
+    margin-top: 13px;
+  }
+}
+
+.product--buckwheat-small {
+  .product__image-wrapper {
+    padding-top: 28px;
+  }
+
+  .product__button {
+    margin-top: 17px;
+  }
+}
+
+.product--buckwheat-big {
+  .product__image-wrapper {
+    padding-top: 10px;
+  }
+
+  .product__button {
+    margin-top: 13px;
+  }
+}
+
+.product--rice-small {
+  .product__image-wrapper {
+    padding-top: 22px;
+  }
+
+  .product__button {
+    margin-top: 17px;
   }
 }

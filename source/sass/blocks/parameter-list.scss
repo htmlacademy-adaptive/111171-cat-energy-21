@@ -1,10 +1,11 @@
 .parameter-list {
   display: flex;
+  margin-bottom: 0;
   flex-wrap: wrap;
 
   &__name,
   &__value {
-    min-width: 40px;
+    min-width: 41px;
     box-sizing: border-box;
     font-family: $Arial;
     font-size: 12px;
@@ -12,7 +13,7 @@
   }
 
   &__name {
-    margin-right: 60px;
+    margin-right: 58px;
   }
 
   &__value {
