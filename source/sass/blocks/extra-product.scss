@@ -1,4 +1,11 @@
 .extra-product {
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $light-grey;
+  flex-direction: column;
+
+
   @include tablet {
     padding-left: 38px;
     padding-right: 38px;
@@ -12,9 +19,17 @@
   }
 
   &__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-left: 1px;
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
+    text-transform: uppercase;
     color: $darkest-grey;
+  }
+
+  &__button {
+    margin-top: 15px;
   }
 }

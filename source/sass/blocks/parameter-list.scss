@@ -1,19 +1,16 @@
-.parameter-list {
+.parameter {
   display: flex;
   margin-bottom: 0;
-  flex-wrap: wrap;
+  margin-top: 0;
+  justify-content: space-between;
+  align-items: center;
 
   &__name,
   &__value {
-    min-width: 41px;
     box-sizing: border-box;
     font-family: $Arial;
     font-size: 12px;
     line-height: 16px;
-  }
-
-  &__name {
-    margin-right: 58px;
   }
 
   &__value {
@@ -22,9 +19,9 @@
   }
 }
 
-.parameter-list--extra {
-  &__name,
-  &__value {
+.parameter--extra {
+  .parameter__name,
+  .parameter__value {
     font-size: 14px;
     line-height: 1;
   }
