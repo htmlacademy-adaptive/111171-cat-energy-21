@@ -25,6 +25,10 @@
     @include tablet {
       margin-top: 39px;
     }
+
+    @include desktop {
+      margin-top: 35px;
+    }
   }
 
   &__wrapper {

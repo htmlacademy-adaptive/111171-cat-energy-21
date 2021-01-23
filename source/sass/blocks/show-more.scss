@@ -9,6 +9,10 @@
     border: 2px solid $lightest-grey;
   }
 
+  @include desktop {
+    padding-top: 51px;
+  }
+
   &__wrapper {
     display: flex;
     padding-left: 20px;

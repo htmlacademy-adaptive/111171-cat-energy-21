@@ -87,5 +87,10 @@
     @include tablet {
       padding-bottom: 9px;
     }
+
+    @include desktop {
+      padding-top: 19px;
+      padding-bottom: 6px;
+    }
   }
 }

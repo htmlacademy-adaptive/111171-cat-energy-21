@@ -6,6 +6,13 @@
   @include tablet {
     max-width: 708px;
     padding-top: 69px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 80px;
   }
 
   &__wrapper {
@@ -14,11 +21,14 @@
     background: $light-green url("/img/gift-photo-mobile.jpg") no-repeat center;
 
     @include tablet {
+      display: flex;
+      padding: 72px 120px 68px 57px;
       background: $light-green url("/img/gift-photo-tablet.jpg") no-repeat center;
+      justify-content: flex-end;
     }
 
     @include desktop {
-      padding: 185px 43px 42px 41px;
+      padding: 187px 41px 42px 39px;
     }
   }
 
@@ -30,6 +40,17 @@
     left: 101px;
     background: url("/img/icon_gift.svg") center no-repeat;
     content: "";
+
+    @include tablet {
+      height: 85px;
+      top: 55px;
+      left: 79px;
+    }
+
+    @include tablet {
+      height: 84px;
+      left: 85px;
+    }
   }
 
   &__description {
@@ -40,5 +61,14 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+
+    @include tablet {
+      max-width: 165px;
+      text-align: left;
+    }
+
+    @include desktop {
+      text-align: center;
+    }
   }
 }

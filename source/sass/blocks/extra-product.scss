@@ -3,6 +3,7 @@
   padding-top: 13px;
   padding-bottom: 18px;
   border-bottom: 1px solid $light-grey;
+  box-sizing: border-box;
   flex-direction: column;
 
   @include tablet {
@@ -13,10 +14,9 @@
   }
 
   @include desktop {
-    padding-left: 0;
-    padding-right: 0;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   &__title {
@@ -28,9 +28,21 @@
     font-weight: 400;
     text-transform: uppercase;
     color: $darkest-grey;
+    box-sizing: border-box;
 
     @include tablet {
       font-size: 20px;
+    }
+
+    @include desktop {
+      min-width: 165px;
+    }
+  }
+
+  &__parameters {
+    @include desktop {
+      max-width: 286px;
+      width: 100%;
     }
   }
 
@@ -40,6 +52,11 @@
     @include tablet {
       width: 100%;
     }
+
+    @include desktop {
+      width: auto;
+      margin-top: 0;
+    }
   }
 }
 
@@ -48,9 +65,17 @@
     padding: 21px 38px 27px;
   }
 
+  @include desktop {
+    padding: 16px 0 15px;
+  }
+
   .extra-product__title {
     @include tablet {
       margin-bottom: 11px;
+    }
+
+    @include desktop {
+      margin-right: 120px;
     }
   }
 }
@@ -60,10 +85,22 @@
     padding: 22px 37px 28px;
   }
 
+  @include desktop {
+    padding: 16px 0 15px;
+  }
+
   .extra-product__title {
     @include tablet {
       margin-bottom: 11px;
     }
+
+    @include desktop {
+      margin-right: 112px;
+    }
+  }
+
+  .extra-product__parameters {
+    max-width: 280px;
   }
 }
 
@@ -72,9 +109,17 @@
     padding: 20px 37px 29px;
   }
 
+  @include desktop {
+    padding: 16px 0 15px;
+  }
+
   .extra-product__title {
     @include tablet {
       margin-bottom: 9px;
+    }
+
+    @include desktop {
+      margin-right: 120px;
     }
   }
 }
@@ -85,9 +130,17 @@
     border-bottom: none;
   }
 
+  @include desktop {
+    padding: 16px 0 15px;
+  }
+
   .extra-product__title {
     @include tablet {
       margin-bottom: 10px;
+    }
+
+    @include desktop {
+      margin-right: 120px;
     }
   }
 }
