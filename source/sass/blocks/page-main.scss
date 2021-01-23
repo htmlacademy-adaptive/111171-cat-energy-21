@@ -21,6 +21,10 @@
 
   &__title--catalog {
     margin-bottom: 40px;
+
+    @include tablet {
+      margin-top: 39px;
+    }
   }
 
   &__wrapper {

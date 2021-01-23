@@ -5,12 +5,22 @@
   justify-content: space-between;
   align-items: center;
 
+  @include tablet {
+    padding-bottom: 6px;
+    padding-top: 9px;
+    border-bottom: 1px solid $light-grey;
+  }
+
   &__name,
   &__value {
     box-sizing: border-box;
     font-family: $Arial;
     font-size: 12px;
     line-height: 16px;
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 
   &__value {
@@ -24,9 +34,25 @@
   .parameter__value {
     font-size: 14px;
     line-height: 1;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  @include tablet {
+    border-bottom: none;
   }
 
   @include desktop {
     flex-wrap: nowrap;
+  }
+
+  .parameter__value {
+    @include tablet {
+      min-width: 45px;
+      margin-left: 48px;
+    }
   }
 }

@@ -81,3 +81,11 @@
     }
   }
 }
+
+.site-list--catalog {
+  .site-list__link {
+    @include tablet {
+      padding-bottom: 9px;
+    }
+  }
+}

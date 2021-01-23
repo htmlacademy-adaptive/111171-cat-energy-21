@@ -16,6 +16,10 @@
 
     @include tablet {
       padding-left: 37px;
+      padding-right: 36px;
+      margin-left: 0;
+      margin-bottom: 80px;
+      font-size: 36px;
     }
   }
 
@@ -27,6 +31,7 @@
     @include tablet {
       padding-left: 30px;
       padding-right: 30px;
+      margin-top: -60px;
     }
 
     @include desktop {
@@ -40,6 +45,11 @@
     @include list-styles-reset;
     padding-top: 1px;
     border-top: 1px solid $light-grey;
+
+    @include tablet {
+      padding-top: 0;
+      border: 1px solid $light-grey;
+    }
 
     @include desktop {
       flex-grow: 1;

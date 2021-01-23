@@ -1,12 +1,20 @@
 .catalog {
   border-top: 1px solid $lighter-grey;
 
+  @include tablet {
+    padding-top: 124px;
+    padding-bottom: 90px;
+    border-top: none;
+  }
+
   &__list {
     @include list-styles-reset;
 
     @include tablet {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+      row-gap: 140px;
       padding-left: 30px;
       padding-right: 30px;
     }
@@ -20,5 +28,9 @@
 
   &__more {
     margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
 }

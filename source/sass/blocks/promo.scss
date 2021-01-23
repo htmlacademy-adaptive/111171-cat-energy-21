@@ -3,13 +3,18 @@
   padding-top: 38px;
   margin: 0 auto;
 
+  @include tablet {
+    max-width: 708px;
+    padding-top: 69px;
+  }
+
   &__wrapper {
     position: relative;
     padding: 188px 58px 40px 57px;
     background: $light-green url("/img/gift-photo-mobile.jpg") no-repeat center;
 
     @include tablet {
-      padding: 71px 124px 69px 423px;
+      background: $light-green url("/img/gift-photo-tablet.jpg") no-repeat center;
     }
 
     @include desktop {

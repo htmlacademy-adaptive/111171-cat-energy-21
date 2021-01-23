@@ -5,10 +5,11 @@
   border-bottom: 1px solid $light-grey;
   flex-direction: column;
 
-
   @include tablet {
-    padding-left: 38px;
-    padding-right: 38px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   @include desktop {
@@ -27,9 +28,66 @@
     font-weight: 400;
     text-transform: uppercase;
     color: $darkest-grey;
+
+    @include tablet {
+      font-size: 20px;
+    }
   }
 
   &__button {
     margin-top: 15px;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
+
+.extra-product--sweetener {
+  @include tablet {
+    padding: 21px 38px 27px;
+  }
+
+  .extra-product__title {
+    @include tablet {
+      margin-bottom: 11px;
+    }
+  }
+}
+
+.extra-product--water {
+  @include tablet {
+    padding: 22px 37px 28px;
+  }
+
+  .extra-product__title {
+    @include tablet {
+      margin-bottom: 11px;
+    }
+  }
+}
+
+.extra-product--milk {
+  @include tablet {
+    padding: 20px 37px 29px;
+  }
+
+  .extra-product__title {
+    @include tablet {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.extra-product--vitamins {
+  @include tablet {
+    padding: 21px 37px 27px;
+    border-bottom: none;
+  }
+
+  .extra-product__title {
+    @include tablet {
+      margin-bottom: 10px;
+    }
   }
 }
