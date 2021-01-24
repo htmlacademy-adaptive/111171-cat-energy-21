@@ -21,6 +21,7 @@
   }
 
   &:active {
+    background-color: $green;
     color: rgba($white, 0.3);
   }
 }
@@ -34,6 +35,15 @@
 
   @include desktop {
     padding-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $green;
+    color: rgba($white, 0.3);
   }
 }
 
@@ -49,6 +59,15 @@
     padding-left: 91px;
     padding-right: 91px;
   }
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $green;
+    color: rgba($white, 0.3);
+  }
 }
 
 .button--show-more {
@@ -56,6 +75,15 @@
   font-size: 16px;
   line-height: 20px;
   background-color: $lightest-grey;
+
+  &:hover {
+    background-color: $lighter-grey;
+  }
+
+  &:active {
+    background-color: $lighter-grey;
+    color: rgba($darker-grey, 0.3);
+  }
 }
 
 .button--form {
