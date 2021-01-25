@@ -1,21 +1,19 @@
 .copyright {
-  &__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
-    @include tablet {
-      max-width: 165px;
-      justify-content: flex-end;
-    }
+  @include tablet {
+    max-width: 165px;
+    justify-content: flex-end;
   }
 
   &__academy-text {
     font-family: $Arial;
     font-size: 16px;
     color: $darker-grey;
+    text-decoration: none;
 
     @include tablet {
       margin-right: 24px;
@@ -30,16 +28,17 @@
     }
   }
 
-  &__link:hover {
-    .copyright__academy-icon {
+  &:hover {
+    .copyright__academy-icon path {
       fill: $light-green;
     }
   }
 
-  &__link:active {
+  &:active {
     .copyright__academy-text {
       color: #bebebe;
     }
+
     .copyright__academy-icon {
       fill: #c9e1bb;
     }
