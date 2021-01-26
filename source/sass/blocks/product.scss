@@ -1,18 +1,36 @@
 .product {
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
+  padding-top: 21px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $lightest-grey;
 
   @include tablet {
-    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 40px;
+    border-bottom: none;
     background-color: $lightest-grey;
-    padding-left: 36px;
-    padding-right: 36px;
+  }
+
+  &__wrapper {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+
+    @include tablet {
+      padding-left: 38px;
+      padding-right: 37px;
+      flex-direction: column;
+    }
+
+    @include desktop {
+      padding-right: 35px;
+    }
   }
 
   &__image-wrapper {
-    flex-basis: 50%;
     display: flex;
+    flex-basis: 50%;
     justify-content: center;
     align-items: center;
 
@@ -30,11 +48,35 @@
   }
 
   &__title {
+    max-width: 80px;
+    margin-top: 0;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
     color: $darkest-grey;
     text-transform: uppercase;
+
+    @include tablet {
+      max-width: 130px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    @include desktop {
+      line-height: 21px;
+    }
+  }
+
+  &__parameters {
+    @include tablet {
+      margin-top: 12px;
+    }
+
+    @include desktop {
+      margin-top: 15px;
+    }
   }
 
   &__button {
@@ -42,6 +84,395 @@
 
     @include tablet {
       flex-basis: auto;
+    }
+  }
+}
+
+.product--chicken-small {
+  .product__image-wrapper {
+    padding-top: 7px;
+
+    @include tablet {
+      margin-top: -51px;
+    }
+
+    @include desktop {
+      margin-top: -59px;
+    }
+  }
+
+  .product__image {
+    @include tablet {
+      width: 161px;
+      height: auto;
+    }
+  }
+
+  .product__description {
+    @include tablet {
+      padding-top: 31px;
+    }
+
+    @include desktop {
+      padding-top: 41px;
+    }
+  }
+
+  .product__title {
+    @include tablet {
+      padding-left: 4px;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+
+  .product__button {
+    margin-top: 21px;
+
+    @include tablet {
+      margin-top: 33px;
+    }
+
+    @include desktop {
+      margin-top: 34px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.product--chicken-big {
+  .product__image-wrapper {
+    padding-top: 9px;
+
+    @include tablet {
+      margin-top: -82px;
+    }
+
+    @include desktop {
+      margin-top: -89px;
+    }
+  }
+
+  .product__image {
+    @include tablet {
+      width: 168px;
+      height: auto;
+    }
+
+    @include desktop {
+      width: 172px;
+    }
+  }
+
+  .product__description {
+    @include tablet {
+      padding-top: 25px;
+    }
+
+    @include desktop {
+      padding-top: 39px;
+    }
+  }
+
+  .product__title {
+    @include tablet {
+      padding-left: 3px;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+
+  .product__button {
+    margin-top: 13px;
+
+    @include tablet {
+      margin-top: 33px;
+    }
+
+    @include desktop {
+      margin-top: 34px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.product--fish-small {
+  .product__image-wrapper {
+    padding-top: 25px;
+
+    @include tablet {
+      margin-top: -72px;
+    }
+
+    @include desktop {
+      margin-top: -79px;
+    }
+  }
+
+  .product__image {
+    @include tablet {
+      width: 163px;
+      height: auto;
+    }
+  }
+
+  .product__description {
+    @include tablet {
+      padding-top: 32px;
+      padding-left: 1px;
+    }
+
+    @include desktop {
+      padding-top: 41px;
+    }
+  }
+
+  .product__title {
+    @include tablet {
+      padding-left: 4px;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+
+  .product__button {
+    margin-top: 20px;
+
+    @include tablet {
+      margin-top: 33px;
+      margin-left: 2px;
+    }
+
+    @include desktop {
+      margin-top: 34px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.product--fish-big {
+  .product__image-wrapper {
+    padding-top: 9px;
+
+    @include tablet {
+      margin-top: -82px;
+    }
+
+    @include desktop {
+      margin-top: -89px;
+    }
+  }
+
+  .product__image {
+    @include tablet {
+      width: 168px;
+      height: auto;
+    }
+
+    @include desktop {
+      width: 172px;
+    }
+  }
+
+  .product__description {
+    @include tablet {
+      padding-top: 32px;
+      padding-left: 1px;
+    }
+
+    @include desktop {
+      padding-top: 45px;
+    }
+  }
+
+  .product__title {
+    @include tablet {
+      padding-left: 4px;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+
+  .product__button {
+    margin-top: 13px;
+
+    @include tablet {
+      margin-top: 33px;
+      margin-left: 2px;
+    }
+
+    @include desktop {
+      margin-top: 34px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.product--buckwheat-small {
+  .product__image-wrapper {
+    padding-top: 28px;
+
+    @include tablet {
+      margin-top: -71px;
+    }
+
+    @include desktop {
+      margin-top: -79px;
+    }
+  }
+
+  .product__image {
+    @include tablet {
+      width: 161px;
+      height: auto;
+    }
+  }
+
+  .product__description {
+    @include tablet {
+      padding-top: 32px;
+      padding-left: 1px;
+    }
+
+    @include desktop {
+      padding-top: 41px;
+    }
+  }
+
+  .product__title {
+    @include tablet {
+      padding-left: 4px;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+
+  .product__button {
+    margin-top: 17px;
+
+    @include tablet {
+      margin-top: 33px;
+      margin-left: 2px;
+    }
+
+    @include desktop {
+      margin-top: 34px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.product--buckwheat-big {
+  .product__image-wrapper {
+    padding-top: 10px;
+
+    @include tablet {
+      margin-top: -82px;
+    }
+
+    @include desktop {
+      margin-top: -90px;
+    }
+  }
+
+  .product__image {
+    @include tablet {
+      width: 168px;
+      height: auto;
+    }
+
+    @include desktop {
+      width: 172px;
+    }
+  }
+
+  .product__description {
+    @include tablet {
+      padding-top: 32px;
+      padding-left: 1px;
+    }
+
+    @include desktop {
+      padding-top: 45px;
+    }
+  }
+
+  .product__title {
+    @include tablet {
+      padding-left: 4px;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+
+  .product__button {
+    margin-top: 13px;
+
+    @include tablet {
+      margin-top: 33px;
+      margin-left: 2px;
+    }
+
+    @include desktop {
+      margin-top: 34px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.product--rice-small {
+  .product__image-wrapper {
+    padding-top: 22px;
+
+    @include tablet {
+      margin-top: -67px;
+    }
+
+    @include desktop {
+      margin-top: -76px;
+    }
+  }
+
+  .product__image {
+    @include tablet {
+      width: 163px;
+      height: auto;
+    }
+  }
+
+  .product__description {
+    @include tablet {
+      padding-top: 31px;
+    }
+
+    @include desktop {
+      padding-top: 41px;
+    }
+  }
+
+  .product__button {
+    margin-top: 17px;
+
+    @include tablet {
+      margin-top: 33px;
+      margin-left: 2px;
+    }
+
+    @include desktop {
+      margin-top: 34px;
+      margin-right: 3px;
     }
   }
 }

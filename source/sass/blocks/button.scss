@@ -21,23 +21,69 @@
   }
 
   &:active {
+    background-color: $green;
     color: rgba($white, 0.3);
   }
 }
 
 .button--order {
-  padding: 11px 0;
+  padding: 10px 0 9px;
   font-size: 16px;
   line-height: 20px;
   color: $white;
   background-color: $light-green;
+
+  @include desktop {
+    padding-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $green;
+    color: rgba($white, 0.3);
+  }
+}
+
+.button--extra-order {
+  padding: 10px 0 9px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  background-color: $light-green;
+
+  @include desktop {
+    padding-bottom: 10px;
+    padding-left: 91px;
+    padding-right: 91px;
+  }
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $green;
+    color: rgba($white, 0.3);
+  }
 }
 
 .button--show-more {
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 16px;
   line-height: 20px;
   background-color: $lightest-grey;
+
+  &:hover {
+    background-color: $lighter-grey;
+  }
+
+  &:active {
+    background-color: $lighter-grey;
+    color: rgba($darker-grey, 0.3);
+  }
 }
 
 .button--form {
@@ -57,5 +103,44 @@
 
   @include desktop {
     padding: 16px 208px;
+  }
+}
+
+.button--plus {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+  @include tablet {
+    width: 60px;
+    height: 60px;
+  }
+
+  &::before {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 13px;
+    content: "";
+    background-color: #d3d3d3;
+
+    @include tablet {
+      width: 60px;
+      top: 28px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    right: 14px;
+    content: "";
+    background-color: #d3d3d3;
+
+    @include tablet {
+      height: 60px;
+      right: 28px;
+    }
   }
 }

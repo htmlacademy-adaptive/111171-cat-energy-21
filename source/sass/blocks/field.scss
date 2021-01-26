@@ -118,6 +118,7 @@
     @include tablet {
       padding-bottom: 0;
       margin-right: 19px;
+      padding-left: 3px;
     }
 
     @include desktop {
@@ -132,6 +133,7 @@
 
     @include tablet {
       padding-left: 20px;
+      background-position-x: 97%;
     }
 
     @include desktop {
@@ -162,6 +164,7 @@
 
     @include tablet {
       padding-left: 19px;
+      background-position-x: 97%;
     }
 
     @include desktop {

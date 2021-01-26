@@ -19,6 +19,18 @@
     }
   }
 
+  &__title--catalog {
+    margin-bottom: 40px;
+
+    @include tablet {
+      margin-top: 39px;
+    }
+
+    @include desktop {
+      margin-top: 35px;
+    }
+  }
+
   &__wrapper {
     @include tablet {
       padding-left: 69px;

@@ -1,20 +1,146 @@
 .extra-product {
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $light-grey;
+  box-sizing: border-box;
+  flex-direction: column;
+
   @include tablet {
-    padding-left: 38px;
-    padding-right: 38px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   @include desktop {
-    padding-left: 0;
-    padding-right: 0;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   &__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-left: 1px;
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
+    text-transform: uppercase;
     color: $darkest-grey;
+    box-sizing: border-box;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    @include desktop {
+      min-width: 165px;
+    }
+  }
+
+  &__parameters {
+    @include desktop {
+      max-width: 286px;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    margin-top: 15px;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include desktop {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+}
+
+.extra-product--sweetener {
+  @include tablet {
+    padding: 21px 38px 27px;
+  }
+
+  @include desktop {
+    padding: 16px 0 15px;
+  }
+
+  .extra-product__title {
+    @include tablet {
+      margin-bottom: 11px;
+    }
+
+    @include desktop {
+      margin-right: 120px;
+    }
+  }
+}
+
+.extra-product--water {
+  @include tablet {
+    padding: 22px 37px 28px;
+  }
+
+  @include desktop {
+    padding: 16px 0 15px;
+  }
+
+  .extra-product__title {
+    @include tablet {
+      margin-bottom: 11px;
+    }
+
+    @include desktop {
+      margin-right: 112px;
+    }
+  }
+
+  .extra-product__parameters {
+    max-width: 280px;
+  }
+}
+
+.extra-product--milk {
+  @include tablet {
+    padding: 20px 37px 29px;
+  }
+
+  @include desktop {
+    padding: 16px 0 15px;
+  }
+
+  .extra-product__title {
+    @include tablet {
+      margin-bottom: 9px;
+    }
+
+    @include desktop {
+      margin-right: 120px;
+    }
+  }
+}
+
+.extra-product--vitamins {
+  @include tablet {
+    padding: 21px 37px 27px;
+    border-bottom: none;
+  }
+
+  @include desktop {
+    padding: 16px 0 15px;
+  }
+
+  .extra-product__title {
+    @include tablet {
+      margin-bottom: 10px;
+    }
+
+    @include desktop {
+      margin-right: 120px;
+    }
   }
 }

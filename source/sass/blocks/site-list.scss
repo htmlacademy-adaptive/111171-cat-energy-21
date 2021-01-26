@@ -34,11 +34,11 @@
     }
 
     &:hover .site-list__link {
-      opacity: 0.6;
+      color: $dark-grey;
     }
 
     &:active .site-list__link {
-      opacity: 0.3;
+      color: #b3b3b3;
     }
   }
 
@@ -69,6 +69,18 @@
 }
 
 .site-list--index {
+  .site-list__item:hover {
+    .site-list__link {
+      color: rgba($white, 0.6);
+    }
+  }
+
+  .site-list__item:active {
+    .site-list__link {
+      color: rgba($white, 0.3);
+    }
+  }
+
   .site-list__link {
     @include desktop {
       color: $white;
@@ -78,6 +90,19 @@
   .site-list__item--active {
     @include desktop {
       border-bottom: 2px solid $white;
+    }
+  }
+}
+
+.site-list--catalog {
+  .site-list__link {
+    @include tablet {
+      padding-bottom: 9px;
+    }
+
+    @include desktop {
+      padding-top: 19px;
+      padding-bottom: 6px;
     }
   }
 }

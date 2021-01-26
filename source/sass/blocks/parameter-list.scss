@@ -1,28 +1,72 @@
-.parameter-list {
+.parameter {
   display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    padding-bottom: 6px;
+    padding-top: 9px;
+    border-bottom: 1px solid $light-grey;
+  }
 
   &__name,
   &__value {
+    box-sizing: border-box;
     font-family: $Arial;
     font-size: 12px;
     line-height: 16px;
-    flex-basis: 50%;
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 
   &__value {
     margin-left: 0;
+    text-align: right;
+
+    @include desktop {
+      padding-right: 5px;
+    }
   }
 }
 
-.parameter-list--extra {
-  &__name,
-  &__value {
+.parameter--extra {
+  @include desktop {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .parameter__name,
+  .parameter__value {
     font-size: 14px;
     line-height: 1;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  @include tablet {
+    border-bottom: none;
   }
 
   @include desktop {
     flex-wrap: nowrap;
+  }
+
+  .parameter__value {
+    @include tablet {
+      min-width: 45px;
+      margin-left: 48px;
+    }
+
+    @include desktop {
+      margin-left: 0;
+      padding-right: 0;
+    }
   }
 }

@@ -10,10 +10,10 @@
   }
 
   &__academy-text {
-    text-decoration: none;
     font-family: $Arial;
     font-size: 16px;
     color: $darker-grey;
+    text-decoration: none;
 
     @include tablet {
       margin-right: 24px;
@@ -25,6 +25,22 @@
 
     @include desktop {
       padding-top: 5px;
+    }
+  }
+
+  &:hover {
+    .copyright__academy-icon path {
+      fill: $light-green;
+    }
+  }
+
+  &:active {
+    .copyright__academy-text {
+      color: #bebebe;
+    }
+
+    .copyright__academy-icon {
+      fill: #c9e1bb;
     }
   }
 }

@@ -108,6 +108,10 @@
     padding-top: 28px;
   }
 
+  @include desktop {
+    padding-top: 0;
+  }
+
   .contacts__caption {
     @include tablet {
       line-height: 24px;
@@ -116,5 +120,39 @@
 
   .contacts__map {
     margin-top: 25px;
+
+    @include desktop {
+      margin-top: 0;
+    }
+  }
+}
+
+.contacts--catalog {
+  padding-top: 28px;
+
+  @include tablet {
+    padding-top: 63px;
+  }
+
+  @include desktop {
+    padding-top: 0;
+  }
+
+  .contacts__map {
+    margin-top: 26px;
+
+    @include tablet {
+      margin-top: 57px;
+    }
+
+    @include desktop {
+      margin-top: 0;
+    }
+  }
+
+  .contacts__wrapper {
+    @include desktop {
+      padding-top: 62px;
+    }
   }
 }

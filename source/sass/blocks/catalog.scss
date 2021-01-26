@@ -1,18 +1,43 @@
 .catalog {
+  border-top: 1px solid $lighter-grey;
+
+  @include tablet {
+    padding-top: 124px;
+    padding-bottom: 90px;
+    border-top: none;
+  }
+
+  @include desktop {
+    padding-top: 125px;
+    padding-bottom: 98px;
+  }
+
   &__list {
     @include list-styles-reset;
 
     @include tablet {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+      row-gap: 140px;
       padding-left: 30px;
       padding-right: 30px;
     }
 
     @include desktop {
+      max-width: 1220px;
+      margin: 0 auto;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      padding-left: 110px;
-      padding-right: 110px;
+      column-gap: 80px;
+      row-gap: 143px;
+    }
+  }
+
+  &__more {
+    margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 0;
     }
   }
 }

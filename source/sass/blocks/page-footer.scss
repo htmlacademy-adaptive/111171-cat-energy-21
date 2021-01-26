@@ -6,6 +6,10 @@
     padding-bottom: 30px;
   }
 
+  @include desktop {
+    padding-bottom: 38px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
