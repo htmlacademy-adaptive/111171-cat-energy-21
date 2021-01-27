@@ -25,6 +25,20 @@
       height: 40px;
       margin-right: 18px;
     }
+
+    input:disabled ~ .checkbox__box {
+      opacity: 0.3;
+    }
+
+    input:disabled ~ .checkbox__name {
+      opacity: 0.3;
+    }
+  }
+
+  &:hover {
+    .checkbox__box {
+      border-color: #bababa;
+    }
   }
 
   input:checked ~ .checkbox__box::after {

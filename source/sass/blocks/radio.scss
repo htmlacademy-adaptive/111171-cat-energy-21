@@ -31,7 +31,21 @@
     }
   }
 
+  &:hover {
+    .radio__button {
+      box-shadow: 0 0 0 1px #bababa;
+    }
+  }
+
   input:checked ~ .radio__button {
     background-color: $light-green;
+  }
+
+  input:disabled ~ .radio__button {
+    opacity: 0.3;
+  }
+
+  input:disabled ~ .radio__name {
+    opacity: 0.3;
   }
 }

@@ -23,12 +23,13 @@
     @include tablet {
       display: flex;
       padding: 72px 120px 68px 57px;
-      background: $light-green url("/img/gift-photo-tablet.jpg") no-repeat center;
+      background-image: url("/img/gift-photo-tablet.jpg");
       justify-content: flex-end;
     }
 
     @include desktop {
       padding: 187px 41px 42px 39px;
+      background-image: url("/img/gift-photo-desktop.jpg");
     }
   }
 

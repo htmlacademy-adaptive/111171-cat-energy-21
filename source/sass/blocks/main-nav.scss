@@ -1,15 +1,18 @@
 .main-nav {
-  position: absolute;
+  display: none;
   width: 100%;
-  top: 53px;
-  left: 0;
   z-index: 1;
   background-color: $white;
 
   @include tablet {
+    display: block;
     flex-grow: 1;
     position: static;
     background-color: transparent;
+  }
+
+  .page-header--no-js & {
+    display: block;
   }
 }
 

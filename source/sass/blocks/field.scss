@@ -35,6 +35,15 @@
     flex-grow: 1;
   }
 
+  &__value:focus {
+    border: 2px solid $darker-grey;
+    border-radius: 0;
+  }
+
+  &__value--error {
+    border-color: $pink;
+  }
+
   &__input-wrapper {
     border: 1px solid $light-grey;
     display: block;
@@ -43,6 +52,12 @@
     .field__value {
       border: none;
       width: auto;
+    }
+  }
+
+  &:hover {
+    .field__value {
+      border-color: $light-grey;
     }
   }
 }
@@ -141,6 +156,15 @@
       background-position-x: 96%;
     }
   }
+
+  .field__value:disabled {
+    border: 2px solid $darker-grey;
+    background-image: url("/img/mail-disabled.svg");
+  }
+
+  .field__value--error {
+    background-image: url("/img/mail-error.svg");
+  }
 }
 
 .field--phone {
@@ -170,5 +194,14 @@
     @include desktop {
       background-position-x: 97%;
     }
+  }
+
+  .field__value:disabled {
+    border: 2px solid $darker-grey;
+    background-image: url("/img/phone-disabled.svg");
+  }
+
+  .field__value--error {
+    background-image: url("/img/phone-error.svg");
   }
 }
