@@ -104,9 +104,10 @@
 
 .field--age {
   .field__name {
-    margin-right: 14px;
+    width: 100%;
 
     @include tablet {
+      width: auto;
       margin-right: 17px;
     }
   }
