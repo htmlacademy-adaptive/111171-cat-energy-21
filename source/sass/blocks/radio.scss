@@ -2,46 +2,53 @@
   display: flex;
   align-items: center;
 
-  &__button {
-    display: block;
-    width: 29px;
-    height: 29px;
-    border-radius: 50%;
-    border: 8px solid $white;
-    box-shadow: 0 0 0 1px $light-grey;
-    box-sizing: border-box;
-    margin-right: 17px;
-
-    @include tablet {
-      width: 39px;
-      height: 39px;
-      border-width: 10px;
-      margin-right: 21px;
-    }
-  }
-
   &__name {
+    position: relative;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 45px;
     color: $darkest-grey;
     font-size: 16px;
     text-transform: uppercase;
 
     @include tablet {
+      padding-left: 60px;
       font-size: 20px;
       line-height: 30px;
     }
   }
 
+  &__name::before {
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 29px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 8px solid $white;
+    box-shadow: 0 0 0 1px $light-grey;
+    box-sizing: border-box;
+    z-index: -1;
+
+    @include tablet {
+      width: 39px;
+      height: 39px;
+      border-width: 10px;
+    }
+  }
+
   &:hover {
-    .radio__button {
+    .radio__name::before {
       box-shadow: 0 0 0 1px #bababa;
     }
   }
 
-  input:checked ~ .radio__button {
+  input:checked ~ .radio__name::before{
     background-color: $light-green;
   }
 
-  input:disabled ~ .radio__button {
+  input:disabled ~ .radio__name::before{
     opacity: 0.3;
   }
 

@@ -17,4 +17,13 @@
     padding-left: 17px;
     min-height: 174px;
   }
+
+  &:hover {
+    border-color: $light-grey;
+  }
+
+  &:focus {
+    outline: $darker-grey 2px solid;
+    border-radius: 0;
+  }
 }

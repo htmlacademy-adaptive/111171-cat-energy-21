@@ -123,12 +123,12 @@
     @include tablet {
       padding-left: 71px;
       padding-right: 70px;
-      padding-top: 31px;
+      padding-top: 28px;
       flex-direction: row;
     }
 
     @include desktop {
-      padding-top: 21px;
+      padding-top: 19px;
       padding-left: 30px;
       padding-right: 30px;
     }
