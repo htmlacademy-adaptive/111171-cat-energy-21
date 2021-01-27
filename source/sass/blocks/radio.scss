@@ -44,11 +44,11 @@
     }
   }
 
-  input:checked ~ .radio__name::before{
+  input:checked ~ .radio__name::before {
     background-color: $light-green;
   }
 
-  input:disabled ~ .radio__name::before{
+  input:disabled ~ .radio__name::before {
     opacity: 0.3;
   }
 

@@ -11,32 +11,6 @@
     flex-basis: auto;
   }
 
-  &__box {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid $light-grey;
-    box-sizing: border-box;
-    margin-right: 16px;
-    position: relative;
-
-    @include tablet {
-      width: 40px;
-      height: 40px;
-      margin-right: 18px;
-    }
-
-
-  }
-
-  &:hover {
-    .checkbox__box {
-      border-color: #bababa;
-    }
-  }
-
-
-
   &__name {
     position: relative;
     padding-left: 45px;
@@ -67,6 +41,12 @@
     @include tablet {
       width: 40px;
       height: 40px;
+    }
+  }
+
+  &:hover {
+    .checkbox__name::before {
+      border-color: #bababa;
     }
   }
 
