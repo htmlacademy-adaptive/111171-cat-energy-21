@@ -58,15 +58,19 @@
 
 .fieldset--goal {
   padding-bottom: 4px;
-  padding-top: 23px;
+  padding-top: 22px;
 
   @include tablet {
-    padding: 25px 27px 10px;
+    padding: 24px 27px 10px;
     border: 1px solid #e7e7e7;
   }
 
   .fieldset__item {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
+
+    @include tablet {
+      margin-bottom: 11px;
+    }
   }
 }
 
@@ -134,7 +138,7 @@
     @include tablet {
       margin-left: -40px;
       padding-right: 42px;
-      margin-bottom: 56px;
+      margin-bottom: 58px;
     }
   }
 }

@@ -70,14 +70,14 @@
 
   &__button:hover {
     @include tablet {
-      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
     }
   }
 
   &__button:active {
     @include tablet {
       border: 1px solid $light-green;
-      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
     }
   }
 
@@ -92,6 +92,8 @@
     border: none;
 
     @include tablet {
+      font-size: 20px;
+      line-height: 30px;
       border-bottom: 1px dotted #b2b2b2;
     }
   }

@@ -55,6 +55,8 @@
   }
 
   &__link {
+    min-width: 170px;
+    box-sizing: border-box;
     color: $black;
     font-size: 16px;
     line-height: 1;
@@ -70,11 +72,6 @@
       font-size: 20px;
       line-height: 30px;
       padding-right: 61px;
-      background-position-x: 132px;
-    }
-
-    @include desktop {
-      background-position-x: 135px;
     }
 
     &:hover {
@@ -104,6 +101,16 @@
     background-size: 100px;
     background-position: 52px 40px;
   }
+
+  .program__link {
+    @include tablet {
+      background-position-x: 132px;
+    }
+
+    @include desktop {
+      background-position-x: 135px;
+    }
+  }
 }
 
 .program--mass {
@@ -121,5 +128,15 @@
     padding-right: 61px;
     background-size: 134px;
     background-position: 33px 46px;
+  }
+
+  .program__link {
+    @include tablet {
+      background-position-x: 128px;
+    }
+
+    @include desktop {
+      background-position-x: 129px;
+    }
   }
 }

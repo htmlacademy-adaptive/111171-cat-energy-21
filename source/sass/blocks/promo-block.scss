@@ -3,7 +3,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/index-background-desktop@2x.jpg"), linear-gradient(to bottom, $light-green, $light-green 303px, $white 25%);
+    background-size: auto 302px, auto;
+  }
 
   @include tablet {
     background: none;
@@ -16,6 +21,11 @@
     background-repeat: no-repeat;
     background-position: right top;
     margin-top: -147px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/index-desktop-bg@2x.jpg"), linear-gradient(to left, #64a73b 50%, $white 50%);
+      background-size: 720px auto, auto;
+    }
   }
 
   &__description {

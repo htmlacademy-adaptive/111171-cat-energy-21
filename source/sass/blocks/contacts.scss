@@ -92,6 +92,7 @@
 
     iframe {
       height: 362px;
+      width: 100%;
 
       @include tablet {
         height: 400px;
@@ -102,11 +103,7 @@
 
 .contacts--index {
   background-color: $white;
-  padding-top: 29px;
-
-  @include tablet {
-    padding-top: 28px;
-  }
+  padding-top: 27px;
 
   @include desktop {
     padding-top: 0;
@@ -119,7 +116,11 @@
   }
 
   .contacts__map {
-    margin-top: 25px;
+    margin-top: 26px;
+
+    @include tablet {
+      margin-top: 57px;
+    }
 
     @include desktop {
       margin-top: 0;
