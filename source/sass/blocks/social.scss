@@ -30,8 +30,12 @@
       margin-right: 7px;
     }
 
-    &:hover svg {
-      path {
+    svg {
+      fill: #666666;
+    }
+
+    &:hover {
+      svg {
         fill: $light-green;
       }
     }
@@ -53,50 +57,45 @@
   }
 
   &__item--instagram {
-    &:hover svg {
-      path {
-        fill: $light-green;
-      }
-    }
+    svg {
+      fill: #666666;
 
-    &:active svg {
-      opacity: 0.3;
-
-      path {
-        fill: $light-green;
-      }
-    }
-
-    & svg {
       @include tablet {
         width: 23px;
         height: 23px;
       }
+    }
+
+    &:hover svg {
+      fill: $light-green;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+      fill: $light-green;
     }
   }
 
   &__item--facebook {
     margin-right: 4px;
 
-    &:hover svg {
-      path {
-        stroke: $light-green;
-      }
-    }
+    svg {
+      stroke: #666666;
+      fill: none;
 
-    &:active svg {
-      opacity: 0.3;
-
-      path {
-        stroke: $light-green;
-      }
-    }
-
-    & svg {
       @include tablet {
         width: 32px;
         height: 38px;
       }
+    }
+
+    &:hover svg {
+      stroke: $light-green;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+      stroke: $light-green;
     }
   }
 }

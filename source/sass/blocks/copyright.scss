@@ -26,10 +26,14 @@
     @include desktop {
       padding-top: 5px;
     }
+
+    svg {
+      fill: #666666;
+    }
   }
 
   &:hover {
-    .copyright__academy-icon path {
+    .copyright__academy-icon svg {
       fill: $light-green;
     }
   }
@@ -39,7 +43,7 @@
       color: #bebebe;
     }
 
-    .copyright__academy-icon {
+    .copyright__academy-icon svg {
       fill: #c9e1bb;
     }
   }

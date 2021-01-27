@@ -92,6 +92,7 @@
 
     iframe {
       height: 362px;
+      width: 100%;
 
       @include tablet {
         height: 400px;

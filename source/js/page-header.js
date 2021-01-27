@@ -1,5 +1,5 @@
-const pageHeader = document.querySelector('.page-header');
-const humburgerBtn = document.querySelector('.page-header__toggle');
+var pageHeader = document.querySelector('.page-header');
+var humburgerBtn = document.querySelector('.page-header__toggle');
 
 document.addEventListener("DOMContentLoaded", function(event) {
   if (pageHeader) {
